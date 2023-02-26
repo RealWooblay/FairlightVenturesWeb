@@ -4,8 +4,10 @@
       <div class="Details">
         <h4>WELCOME TO</h4>
         <h1>Fairlight Ventures</h1>
+        <router-link to="/about">
+          <button>About Us</button>
+        </router-link>
       </div>
-        
     </div>
   </div>
 </template>
@@ -16,7 +18,7 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
-  }
+  },
 }
 </script>
 
@@ -26,15 +28,35 @@ export default {
   background-image: url(../assets/HomeBackground.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   width: 100%;
-  height: 800px;
+  height: 700px;
   }
 .Details {
   color: #E9EAEC;
-  padding-top: 100px;
   font-size: 30px;
-  display: block;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+  height: 100%;
+  padding-top: 100px;
+  }
+
+  .Details h1 {
+    font-weight: bold;
+  }
+
+  .Details button {
+    border-radius: 10px;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-top: 50px;
+    background-color: #9400D3;
+    cursor: pointer;
+  }
 </style>

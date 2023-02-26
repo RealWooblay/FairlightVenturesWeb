@@ -5,10 +5,10 @@ import {RouterView, RouterLink } from "vue-router"
 
 <template>
   <nav>
-    <div class="logo">
-      <img src="./assets/featherlight.webp" alt="Logo">
-    </div>
     <div class="links">
+      <div class="logo">
+        <img src="./assets/featherlight.webp" alt="Logo">
+      </div>
       <RouterLink active-class="active" to="/">Home</RouterLink>
       <RouterLink active-class="active" to="/about">About</RouterLink>
       <RouterLink active-class="active" to="/">Services</RouterLink>
@@ -21,7 +21,28 @@ import {RouterView, RouterLink } from "vue-router"
 </template>
 
 <style scoped>
+nav {
+  background-color: #E9EAEC;
+  max-height: 50px;
+}
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 50px;
+}
 
+.links a {
+  text-decoration: none;
+}
 
+.active {
+  font-weight: bold;
+  color: #0000B8;
+}
+.logo img {
+  max-width: 50px;
+  margin-left: 25px;
+}
 
 </style>
