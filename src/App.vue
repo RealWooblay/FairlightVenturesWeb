@@ -24,12 +24,13 @@ import {RouterView, RouterLink } from "vue-router"
 nav {
   background-color: #E9EAEC;
   max-height: 50px;
+  width: auto;
 }
 .links {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-right: 50px;
+  margin-right: 10px;
 }
 
 .links a {

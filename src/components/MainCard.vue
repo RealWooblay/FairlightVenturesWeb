@@ -29,7 +29,7 @@ export default {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  width: 100%;
+  width: auto;
   height: 700px;
   }
 .Details {
