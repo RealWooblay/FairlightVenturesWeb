@@ -4,27 +4,24 @@ import {RouterView, RouterLink } from "vue-router"
 </script>
 
 <template>
-  <main>
+  <nav>
+    <div class="logo">
+      <img src="./assets/featherlight.webp" alt="Logo">
+    </div>
     <div class="links">
       <RouterLink active-class="active" to="/">Home</RouterLink>
       <RouterLink active-class="active" to="/about">About</RouterLink>
+      <RouterLink active-class="active" to="/">Services</RouterLink>
+      <RouterLink active-class="active" to="/">Contact</RouterLink>
     </div>
     <RouterView />
-  </main>
+  </nav>
+
+  
 </template>
 
 <style scoped>
 
-.links {
-  padding: 20px;
-}
 
-.links a {
-  margin: 0 5px;
-}
 
-.active {
-  font-weight: bold;
-  color: green;
-}
 </style>
