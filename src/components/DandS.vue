@@ -29,17 +29,20 @@
                 <h1> Our Services </h1>
                 <div class="services">
                 <div class ="info">
+                    <font-awesome-icon class="icon"  icon="fa-solid fa-microchip" />
                     <p> Enter information? </p>
-                    <font-awesome-icon icon="fa-solid fa-link" />
+                    <font-awesome-icon class="icon"  icon="fa-solid fa-seedling" />
                     <p> Enter information? </p>
-                    <font-awesome-icon icon="fa-solid fa-link" />
                 </div>
                 <div class="info1">
+                    <font-awesome-icon class="icon"  icon="fa-solid fa-crown" />
                     <p> Enter information? </p>
-                    <font-awesome-icon icon="fa-solid fa-link" />
+                    <font-awesome-icon class="icon"  icon="fa-solid fa-network-wired" />
                     <p> Enter information? </p>
-                    <font-awesome-icon icon="fa-solid fa-link" />
                 </div>
+              </div>
+              <div class = "Button"> 
+                <button>Our Services →</button>
               </div>
             </div>
             <div class="col">
@@ -148,6 +151,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 50px;
 }
 
 .info, .info1 {
@@ -155,16 +159,34 @@
   display: flex;
   flex-direction: column;
   margin-right: 50px;
-  margin-top: 30px;
 }
 
 .info p, .info1 p {
   margin-left: 50px;
   margin-right: 10px;
-  margin-top: 50px;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
-@media (max-width: 767px) {
+.icon {
+    font-size: 55px;
+}
+
+.Button button {
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 25px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #9400D3;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+@media (max-width: 1024px) {
     .row {
         display: block;
     }
@@ -195,6 +217,21 @@
 .socials2 a {
     margin-right: 30px;
     transform: translate(20px, 0px);
+}
+.icon {
+    font-size: 25px;
+}
+.info p, .info1 p {
+  margin-left: 50px;
+  margin-right: 0px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.info, .info1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-right: 0px;
 }
 }
 </style>

@@ -16,9 +16,13 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faLink } from '@fortawesome/free-solid-svg-icons'
+import { faMicrochip } from '@fortawesome/free-solid-svg-icons'
+import { faSeedling } from '@fortawesome/free-solid-svg-icons'
+import { faCrown } from '@fortawesome/free-solid-svg-icons'
+import { faNetworkWired } from '@fortawesome/free-solid-svg-icons'
 
 /* add icons to the library */
-library.add(faInstagram, faLinkedin, faFacebook, faTwitter, faLink)
+library.add(faInstagram, faLinkedin, faFacebook, faTwitter, faLink, faMicrochip, faSeedling, faCrown, faNetworkWired)
 
 const app = createApp(App)
 
