@@ -166,6 +166,7 @@
   margin-top: 20px;
   margin-bottom: 50px;
   font-size: 12px;
+  margin-right: 50px;
 }
 
 .icon {
@@ -219,11 +220,11 @@
     transform: translate(20px, 0px);
 }
 .Button button {
-    font-size: 10px;
+    font-size: 7px;
     border-radius: 8px;
     margin-top: 0px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
