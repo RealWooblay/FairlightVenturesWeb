@@ -113,7 +113,6 @@
 }
 .quote {
     margin-top: 40px;
-    margin-bottom: 50px;
     font-style: italic;
 }
 
@@ -152,7 +151,7 @@
   flex-direction: row;
   justify-content: center;
   margin-top: 40px;
-  margin-left: 30px;
+  margin-left: 0px;
 }
 
 .info, .info1 {
@@ -170,16 +169,16 @@
 }
 
 .icon {
-    font-size: 55px;
+    font-size: 45px;
 }
 
 .Button button {
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 8px;
-    padding-left: 70px;
-    padding-right: 70px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     background-color: #9400D3;
     cursor: pointer;
     font-weight: bold;
