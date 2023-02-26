@@ -91,7 +91,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px; /* add some padding to create space around elements */
+    padding: 20px; /* add some padding to create space around elements */
     position: relative;
 }
 
@@ -151,14 +151,14 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 40px;
+  margin-left: 30px;
 }
 
 .info, .info1 {
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin-right: 50px;
 }
 
 .info p, .info1 p {
@@ -166,6 +166,7 @@
   margin-right: 10px;
   margin-top: 20px;
   margin-bottom: 50px;
+  font-size: 12px;
 }
 
 .icon {
@@ -174,8 +175,7 @@
 
 .Button button {
     font-size: 20px;
-    border-radius: 10px;
-    margin-top: 25px;
+    border-radius: 8px;
     padding-left: 70px;
     padding-right: 70px;
     padding-top: 8px;
@@ -195,43 +195,87 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 10px;
     cursor: pointer;
-    margin-top: 20px;
-}
+    margin-top: 0px;
+    margin-right: 20px;
+    }
 
 .socials2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 10px;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 0px;
+    margin-right: 20px;
 }
 .socials1 a {
-    margin-right: 30px;
+    margin-right: 20px;
     transform: translate(20px, 0px);
 }
-
 .socials2 a {
-    margin-right: 30px;
+    margin-right: 20px;
     transform: translate(20px, 0px);
 }
-.icon {
-    font-size: 25px;
-}
-.info p, .info1 p {
-  margin-left: 50px;
-  margin-right: 0px;
-  margin-top: 20px;
-  margin-bottom: 50px;
+.Button button {
+    font-size: 10px;
+    border-radius: 8px;
+    margin-top: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .info, .info1 {
   align-items: center;
   display: flex;
   flex-direction: column;
+  margin-right: 30px;
+}
+
+.info p, .info1 p {
+  margin-left: 0px;
   margin-right: 0px;
+  margin-top: 12px;
+  margin-bottom: 40px;
+  font-size: 10px;
+}
+.col h1 {
+    font-size: 18px;
+}
+.col img {
+    width: 220px;
+    height: 260px;
+    margin: 50px;
+}
+
+.icon {
+    font-size: 20px;
+}
+.name {
+    margin-top: -50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.career {
+    font-size: 15px;
+    font-weight: lighter;
+}
+.quote {
+    margin-top: 14px;
+    margin-bottom: 50px;
+    font-style: italic;
+    font-size: 13px;
+}
+.services {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40px;
+  margin-left: 30px;
 }
 }
 </style>
