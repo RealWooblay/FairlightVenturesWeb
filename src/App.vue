@@ -46,4 +46,15 @@ nav {
   margin-left: 25px;
 }
 
+@media (max-width: 767px) {
+  .links a {
+    font-size: 14px;
+  }
+}
+@media (max-width: 500px) {
+  .links a {
+    font-size: 10px;
+  }
+}
+
 </style>
