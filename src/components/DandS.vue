@@ -139,11 +139,13 @@
 .socials1 a {
     margin-bottom: 30px;
     transform: translate(170px, -550px);
+    color: #b19cd9;
 }
 
 .socials2 a {
     margin-bottom: 30px;
     transform: translate(-170px, -550px);
+    color: #b19cd9;
 }
 
 .services {
@@ -180,7 +182,7 @@
     padding-right: 20px;
     padding-top: 6px;
     padding-bottom: 6px;
-    background-color: #9400D3;
+    background-color: #b19cd9;
     cursor: pointer;
     font-weight: bold;
 }

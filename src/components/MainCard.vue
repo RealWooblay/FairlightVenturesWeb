@@ -56,7 +56,7 @@ export default {
     padding-left: 35px;
     padding-right: 35px;
     margin-top: 50px;
-    background-color: #9400D3;
+    background-color: #fff;
     cursor: pointer;
   }
 </style>
