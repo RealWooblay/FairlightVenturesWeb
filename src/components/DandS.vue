@@ -42,7 +42,9 @@
                 </div>
               </div>
               <div class = "Button"> 
-                <button>Learn More →</button>
+                <RouterLink to="/services">
+                    <button>Learn More →</button>
+                </RouterLink>
               </div>
             </div>
             <div class="col">
