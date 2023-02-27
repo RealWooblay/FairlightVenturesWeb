@@ -6,7 +6,7 @@
                 <div class="name">Suzane Charlotte</div>
                 <div class="career">Consulting & Advisory</div>
                 <div class="quote">"Insert Quote Here"</div>
-                <div class="socials1">
+                <div class="socials">
                     <a href="https://instagram.com">
                         <font-awesome-icon icon="fa-brands fa-instagram" />
                     </a>
@@ -51,8 +51,10 @@
                 <img src="../assets/Pagebackground1.jpg" alt="IMG2">
                 <div class="name">David Plisek</div>
                 <div class="career">Cyber Guy</div>
-                <div class="quote">"Insert Quote Here"</div>
-                <div class="socials2">
+                <div class="quote">
+                    "Insert Quote Here"
+                </div>
+                <div class="socials">
                     <a href="https://instagram.com">
                         <font-awesome-icon icon="fa-brands fa-instagram" />
                     </a>
@@ -86,7 +88,8 @@
     flex-direction: row;
     justify-content: space-between;
     background-color: #E9EAEC;
-    color: #000;
+    color: #E9EAEC;
+    background-color: #040720;
 }
 
 .col {
@@ -126,43 +129,25 @@
     font-style: italic;
 }
 
-.socials1 {
+.socials {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    position: relative;
-    bottom: 475px;
-    left: 160px;
+    gap: 30px;
 }
 
-.socials2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    position: relative;
-    bottom: 475px;
-    right: 160px;
-}
-
-.socials1 a {
-    margin-bottom: 30px;
+.socials a {
     color: #6699cc;
-}
-
-.socials2 a {
-    margin-bottom: 30px;
-    color: #6699cc;
+    padding-top: 80px;
 }
 
 .services {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 90px;
   margin-left: 0px;
 }
 
@@ -177,21 +162,21 @@
   margin-right: 10px;
   margin-top: 20px;
   margin-bottom: 50px;
-  font-size: 12px;
+  font-size: 18px;
   margin-right: 50px;
 }
 
 .icon {
-    font-size: 45px;
+    font-size: 50px;
 }
 
 .Button button {
     font-size: 15px;
     border-radius: 8px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: #fad02c;
     cursor: pointer;
     font-weight: bold;
@@ -230,15 +215,21 @@
 .socials1 a {
     margin-right: 20px;
     margin-left: 0px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
     position: relative;
     top: 500px;
-    left: 20px;
+    left: 30px;
 }
 .socials2 a {
     margin-right: 20px;
     position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
     top: 500px;
-    left: 20px;
+    left: 30px;
 }
 .Button button {
     font-size: 7px;
@@ -265,6 +256,7 @@
 }
 .col h1 {
     font-size: 18px;
+    padding-top: 85px;
 }
 .col img {
     width: 220px;
@@ -287,7 +279,6 @@
 }
 .quote {
     margin-top: 14px;
-    margin-bottom: 50px;
     font-style: italic;
     font-size: 13px;
 }
@@ -300,7 +291,7 @@
 }
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1280px) {
 
 .info p, .info1 p {
   margin-left: 15px;
@@ -333,7 +324,6 @@
 }
 .quote {
     margin-top: 14px;
-    margin-bottom: 50px;
     font-style: italic;
     font-size: 12px;
 }
@@ -348,14 +338,14 @@
 }
 .socials1 {
     font-size: 10px;
-    bottom: 340px;
-    left: 100px;
+    bottom: 290px;
+    left: 90px;
     }
 
 .socials2 {
     font-size: 10px;
-    bottom: 340px;
-    right: 100px;
+    bottom: 290px;
+    right: 90px;
 }
 }
 

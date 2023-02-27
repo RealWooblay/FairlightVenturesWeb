@@ -22,7 +22,7 @@ import {RouterView, RouterLink } from "vue-router"
 
 <style scoped>
 nav {
-  background-color: #E9EAEC;
+  background-color: #040720;
   max-height: 50px;
   width: auto;
 }
@@ -35,12 +35,11 @@ nav {
 
 .links a {
   text-decoration: none;
-  color: #0000B8;
+  color: #E9EAEC;
 }
 
 .active {
   font-weight: bold;
-  color: #6699cc;
 }
 .logo img {
   max-width: 50px;
