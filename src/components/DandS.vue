@@ -101,6 +101,14 @@
     width: 280px;
     height: 400px;
     margin: 50px;
+    border: 1px solid #6699cc;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.col img:hover {
+    border-color: #333652;
+    box-shadow: 0 0 18px #333652;
+    transition: 0.3s;
 }
 
 .name {
@@ -124,9 +132,9 @@
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    cursor: pointer;
     position: relative;
     bottom: 475px;
+    left: 160px;
 }
 
 .socials2 {
@@ -135,20 +143,18 @@
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    cursor: pointer;
     position: relative;
     bottom: 475px;
+    right: 160px;
 }
 
 .socials1 a {
     margin-bottom: 30px;
-    margin-left: 320px;
     color: #6699cc;
 }
 
 .socials2 a {
     margin-bottom: 30px;
-    margin-right: 320px;
     color: #6699cc;
 }
 
@@ -192,7 +198,7 @@
 }
 
 
-@media (max-width: 1220px) {
+@media (max-width: 767px) {
     .row {
         display: block;
     }
@@ -204,7 +210,9 @@
     font-size: 10px;
     cursor: pointer;
     margin-top: 0px;
-    margin-right: 20px;
+    position: absolute;
+    right: 120px;
+    top: -150px;
     }
 
 .socials2 {
@@ -215,7 +223,9 @@
     font-size: 10px;
     cursor: pointer;
     margin-top: 0px;
-    margin-right: 20px;
+    position: relative;
+    left: -20px;
+    top: -450px;
 }
 .socials1 a {
     margin-right: 20px;
@@ -289,4 +299,64 @@
   margin-left: 30px;
 }
 }
+
+@media (max-width: 1150px) {
+
+.info p, .info1 p {
+  margin-left: 15px;
+  margin-right: 0px;
+  margin-top: 12px;
+  margin-bottom: 40px;
+  font-size: 10px;
+}
+
+.icon {
+    font-size: 25px;
+}
+.col h1 {
+    font-size: 13px;
+}
+.col img {
+    width: 150px;
+    height: 240px;
+    margin: 50px;
+}
+.name {
+    margin-top: -50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+.career {
+    font-size: 10px;
+    font-weight: lighter;
+}
+.quote {
+    margin-top: 14px;
+    margin-bottom: 50px;
+    font-style: italic;
+    font-size: 12px;
+}
+.Button button {
+    font-size: 10px;
+    border-radius: 8px;
+    margin-top: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.socials1 {
+    font-size: 10px;
+    bottom: 340px;
+    left: 100px;
+    }
+
+.socials2 {
+    font-size: 10px;
+    bottom: 340px;
+    right: 100px;
+}
+}
+
 </style>
