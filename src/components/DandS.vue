@@ -123,7 +123,8 @@
     align-items: center;
     font-size: 20px;
     cursor: pointer;
-    margin-top: 20px;
+    position: relative;
+    bottom: 475px;
 }
 
 .socials2 {
@@ -133,18 +134,19 @@
     align-items: center;
     font-size: 20px;
     cursor: pointer;
-    margin-top: 20px;
+    position: relative;
+    bottom: 475px;
 }
 
 .socials1 a {
     margin-bottom: 30px;
-    transform: translate(170px, -550px);
+    margin-left: 320px;
     color: #6699cc;
 }
 
 .socials2 a {
     margin-bottom: 30px;
-    transform: translate(-170px, -550px);
+    margin-right: 320px;
     color: #6699cc;
 }
 
@@ -215,11 +217,16 @@
 }
 .socials1 a {
     margin-right: 20px;
-    transform: translate(20px, 0px);
+    margin-left: 0px;
+    position: relative;
+    top: 500px;
+    left: 20px;
 }
 .socials2 a {
     margin-right: 20px;
-    transform: translate(20px, 0px);
+    position: relative;
+    top: 500px;
+    left: 20px;
 }
 .Button button {
     font-size: 7px;
