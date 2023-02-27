@@ -190,7 +190,7 @@
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1220px) {
     .row {
         display: block;
     }

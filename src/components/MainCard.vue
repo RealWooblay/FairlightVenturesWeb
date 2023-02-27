@@ -63,4 +63,15 @@ export default {
   .Details button:hover {
     background-color: #fad02c;
   }
+
+  @media (max-width: 767px) {
+    .Details button {
+    font-size: medium;
+    font-weight: bold;
+    padding: 8px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 50px;
+  }
+  }
 </style>
