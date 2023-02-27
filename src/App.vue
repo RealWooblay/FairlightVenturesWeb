@@ -35,11 +35,12 @@ nav {
 
 .links a {
   text-decoration: none;
+  color: #0000B8;
 }
 
 .active {
   font-weight: bold;
-  color: #0000B8;
+  color: #6699cc;
 }
 .logo img {
   max-width: 50px;

@@ -59,4 +59,8 @@ export default {
     background-color: #fff;
     cursor: pointer;
   }
+
+  .Details button:hover {
+    background-color: #fad02c;
+  }
 </style>
