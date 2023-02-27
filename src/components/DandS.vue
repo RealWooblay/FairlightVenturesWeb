@@ -42,7 +42,7 @@
                 </div>
               </div>
               <div class = "Button"> 
-                <button>Our Services →</button>
+                <button>Learn More →</button>
               </div>
             </div>
             <div class="col">
