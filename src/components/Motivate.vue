@@ -13,20 +13,22 @@
                 <p> THIS IS ANOTHER BUNCH OF INFORMATION aiwdnainwdinaiwd niwdnaindiawndioandioanwaiwdnaoiwndawaiondawiondaoiwnd aiwdnaoiwndaiowndaiwondoiandionwionadiowndiaondawiond waiodniaons wiadnoaind winadoiwndaiownd s</p>
             </div>
         </div>
-        <div class="Button">
+        <div class="button">
             <router-link to="/contact">
-                <Button link="/contact" label="Contact Now!" textdecoration="none"/>
+                <Button label="Contact Now!" primary :to="{ path: '/contact'}" style="display: inline-block" />
             </router-link>
         </div>
     </div>
 </template>
 
 <script setup>
-    import Button from './Button.vue';
+import Button from './Button.vue';
 </script>
 
 <style scoped>
-
+a {
+    text-decoration: none;
+}
 .row {
     display: grid; /* use CSS grid */
     grid-template-columns: 1fr 1fr 1fr; /*create two equal columns */
@@ -59,16 +61,18 @@
 .R2 img {
     position: absolute;
     width: 330px;
-    height: 600px;
-    padding-bottom: 190px;
+    height: 400px;
+    margin-bottom: 190px;
     z-index: 1;
 }
 .main {
     background-color: #E9EAEC;
     color: #000;
 }
-.Button {
+.button {
     padding-bottom: 50px;
-    text-decoration: none;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
 }
 </style>

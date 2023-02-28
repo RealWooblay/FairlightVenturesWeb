@@ -18,24 +18,32 @@
             <h3>Hello</h3>  
             <h3>Hello</h3>            
         </div>
-        <div class="Head">Testimonials</div>
-        <div class="test">
-            <img src="../assets/Pagebackground1.jpg" alt="IMG2">
-            <img src="../assets/Pagebackground1.jpg" alt="IMG2">
-            <img src="../assets/Pagebackground1.jpg" alt="IMG2">
+        <h1>Venture Builders</h1>
+        <div class="row">
+            <img src="../assets/circle-png.webp" alt="1">
+            <img src="../assets/circle-png.webp" alt="2">
+            <img src="../assets/circle-png.webp" alt="3">
+            <img src="../assets/circle-png.webp" alt="4">
+            <img src="../assets/circle-png.webp" alt="5">
+        </div>
+        <div class="row">
+            <h3>Hello</h3>
+            <h3>Hello</h3>  
+            <h3>Hello</h3>  
+            <h3>Hello</h3>  
+            <h3>Hello</h3>            
         </div>
     </div>
 </template>
 
-<script>
-
+<script setup>
+import Button from './Button.vue';
 </script>
 
 <style scoped>
 .main-container {
     color: #E9EAEC;
     position: relative;
-    min-height: 100vh;
 }
 #video-background {
     position: absolute;
@@ -49,16 +57,15 @@
 .main-container h1 {
     display: flex;
     justify-content: center;
-    padding-bottom: 120px;
-    padding-top: 20px;
-    font-size: 30px;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    font-size: 22px;
     text-shadow: 1px 1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, -1px -1px 1px #000;
 }
 .row {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-bottom: 20px;
     padding-left: 150px;
     padding-right: 150px;
     background-color: transparent;
@@ -71,24 +78,6 @@
 .row h3 {
     display: flex;
     justify-content: center;
-}
-.test {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.test img {
-    width: 400px;
-    height: 500px;
-    padding: 50px;
-}
-
-.Head {
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-    padding-top: 30px;
-    text-shadow: 1px 1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, -1px -1px 1px #000;
+    margin-bottom: 30px;
 }
 </style>

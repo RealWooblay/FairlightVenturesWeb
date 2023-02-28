@@ -1,9 +1,10 @@
 <template>
-    <button type="button" :class="classes" @click="navigateToLink" :style="style">{{ label }}</button>
+    <button type="button" :class="classes" @click="onClick" :style="style">{{ label }}</button>
   </template>
   
   <script>
   import { reactive, computed } from 'vue';
+  import { useRoute } from 'vue-router';
   
   export default {
     name: 'my-button',
@@ -35,6 +36,7 @@
   
     setup(props, { emit }) {
       props = reactive(props);
+      const route = useRoute()
       return {
         classes: computed(() => ({
           'storybook-button': true,
@@ -43,12 +45,11 @@
         })),
         style: computed(() => ({
           backgroundColor: props.backgroundColor,
-          margin: 'auto',
-          textDecoration: props.textdecoration || 'none',
+          margin: 'auto'
         })),
         onClick() {
           emit('click');
-          this.$router.push(this.link)
+          route.push(props.to)
         }
       }
     },
