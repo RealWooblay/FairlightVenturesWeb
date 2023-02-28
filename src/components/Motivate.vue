@@ -14,9 +14,9 @@
             </div>
         </div>
         <div class="Button">
-        <router-link to="/contact">
-            <Button link="/contact" class="b1" label="Contact Now!" textdeco="none"/>
-        </router-link>
+            <router-link to="/contact">
+                <Button link="/contact" label="Contact Now!" textdecoration="none"/>
+            </router-link>
         </div>
     </div>
 </template>
@@ -30,8 +30,10 @@
 .row {
     display: grid; /* use CSS grid */
     grid-template-columns: 1fr 1fr 1fr; /*create two equal columns */
-    padding-top: 100px;
+    padding-top: 40px;
     padding-bottom: 50px;
+    background-color: #E9EAEC;
+    color: #000;
 }
 
 .R h1 {
@@ -40,7 +42,7 @@
     align-items: center;
     font-weight: bold;
     padding-bottom: 30px;
-    padding-top: 35px;
+    padding-top: 5px;
 }
 .R p {
     display: flex;
@@ -55,15 +57,18 @@
 }
 
 .R2 img {
-    width: 300px;
-    height: 350px;
+    position: absolute;
+    width: 330px;
+    height: 600px;
+    padding-bottom: 190px;
+    z-index: 1;
 }
-
+.main {
+    background-color: #E9EAEC;
+    color: #000;
+}
 .Button {
-    background-color: transparent;
-}
-
-.b1 {
+    padding-bottom: 50px;
     text-decoration: none;
 }
 </style>

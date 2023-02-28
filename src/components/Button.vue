@@ -26,6 +26,9 @@
       backgroundColor: {
         type: String,
       },
+      textdecoration: {
+        type: String,
+      },
     },
   
     emits: ['click'],
@@ -40,7 +43,8 @@
         })),
         style: computed(() => ({
           backgroundColor: props.backgroundColor,
-          margin: 'auto'
+          margin: 'auto',
+          textDecoration: props.textdecoration || 'none',
         })),
         onClick() {
           emit('click');
@@ -62,10 +66,10 @@
   line-height: 1;
 }
 .storybook-button--primary { /* In use */
-  color: #E9EAEC;
-  background-color: #9400D3;
+  color: #000;
+  background-color: #fad02c;
   font-size: 16px;
-  padding: 20px 74px;
+  padding: 10px 84px;
   display: flex;
   justify-content: center;
   align-items: center;
