@@ -52,6 +52,7 @@
     padding-bottom: 120px;
     padding-top: 20px;
     font-size: 30px;
+    text-shadow: 1px 1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, -1px -1px 1px #000;
 }
 .row {
     display: flex;
@@ -88,6 +89,6 @@
     justify-content: center;
     font-size: 30px;
     padding-top: 30px;
-    text-decoration: underline;
+    text-shadow: 1px 1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, -1px -1px 1px #000;
 }
 </style>

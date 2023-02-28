@@ -1,5 +1,5 @@
 <template>
-    <button type="button" :class="classes" @click="onClick" :style="style">{{ label }}</button>
+    <button type="button" :class="classes" @click="navigateToLink" :style="style">{{ label }}</button>
   </template>
   
   <script>
@@ -44,7 +44,7 @@
         })),
         onClick() {
           emit('click');
-          this.$router.push({ name: 'AboutUs' })
+          this.$router.push(this.link)
         }
       }
     },
