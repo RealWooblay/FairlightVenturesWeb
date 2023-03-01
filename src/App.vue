@@ -10,7 +10,7 @@ import {RouterView, RouterLink } from "vue-router"
         <img src="./assets/featherlight.webp" alt="Logo">
       </div>
       <RouterLink active-class="active" to="/">Home</RouterLink>
-      <RouterLink active-class="active" to="/about">About</RouterLink>
+      <RouterLink active-class="active" to="/about">About Us</RouterLink>
       <RouterLink active-class="active" to="/services">Services</RouterLink>
       <RouterLink active-class="active" to="/contact">Contact</RouterLink>
     </div>
