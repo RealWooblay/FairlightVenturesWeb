@@ -1,6 +1,7 @@
 <template>
     <div class="slider-container" :style="{backgroundImage: 'url(' + currentImage + ')', opacity: showImage ? 1 : 0}">
       <div class="slider-caption" :style="{opacity: showCaption ? 1 : 0}">{{ currentCaption }}</div>
+      <div class="Button"><button @click="nextSlide"><i class="fa-regular fa-arrow-right"></i></button></div>
     </div>
   </template>
   
@@ -46,7 +47,12 @@
     },
     beforeUnmount() {
       clearInterval(this.intervalId)
+    },
+    methods: {
+    nextSlide() {
+      this.currentIndex = (this.currentIndex + 1) % this.images.length
     }
+  }
   }
   </script>
   
@@ -71,5 +77,11 @@
     text-align: center;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
     transition: opacity 2s ease-in-out;
+  }
+  .Button {
+    display: flex;
+    justify-content: right;
+    padding-right: 20px;
+    padding-top: 200px;
   }
   </style>
