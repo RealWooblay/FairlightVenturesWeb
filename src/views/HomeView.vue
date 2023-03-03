@@ -3,6 +3,7 @@
     <MainCard/>
     <HomeInfo/>
     <Partners/>
+    <Slider/>
     <Footer/>
   </div>
 </template>
@@ -11,5 +12,6 @@
 import MainCard from '../components/MainCard.vue';
 import HomeInfo from '../components/HomeInfo.vue';
 import Partners from '../components/Partners.vue';
+import Slider from '../components/Slider.vue';
 import Footer from '../components/Footer.vue';
 </script>

@@ -3,7 +3,7 @@
     <div class = "container-one">
       <div class="Details">
         <h4>WELCOME TO</h4>
-        <h1>Fairlight Ventures</h1>
+        <h1 style="color:red">Fairlight Ventures</h1>
       </div>
     </div>
   </div>
