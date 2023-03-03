@@ -4,36 +4,26 @@
       <div class="Details">
         <h4>WELCOME TO</h4>
         <h1>Fairlight Ventures</h1>
-        <router-link to="/about">
-          <button>About Us</button>
-        </router-link>
       </div>
     </div>
   </div>
 </template>
 
-<script>
-
-export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  },
-}
-</script>
-
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+template {
+  padding: 100px;
+}
 .main-container {
-  background-image: url(../assets/HomeBackground.jpg);
+  background: linear-gradient(135deg, #ffffff, #e8e8e8, #ffffff);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   width: auto;
-  height: 700px;
+  height: 650px;
   }
 .Details {
-  color: #E9EAEC;
+  color: rgb(169, 169, 169);
   font-size: 30px;
   text-align: center;
   display: flex;

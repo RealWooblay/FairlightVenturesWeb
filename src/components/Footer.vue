@@ -37,7 +37,7 @@
             Copyright © 2023 Jack Coleman. All rights reserved.
         </div>
         <div class="row">
-            <img src="../assets/featherlight.webp">
+            <img src="../assets/redcardinal.png">
 
         </div>
     </div>
@@ -64,6 +64,7 @@
     padding-bottom: 10px;
     font-style: italic;
     padding-left: 20px;
+    font-size: 15px;
     color: #e9eaec;
 }
 .row a {

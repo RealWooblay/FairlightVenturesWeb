@@ -1,0 +1,80 @@
+<template>
+    <form @submit.prevent="submitForm">
+      <label>
+        Name:
+        <input type="text" v-model="name" />
+      </label>
+      <label>
+        Email:
+        <input type="email" v-model="email" />
+      </label>
+      <label>
+        Message:
+        <textarea v-model="message"></textarea>
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+  </template>
+
+  <script>
+  import emailjs from 'emailjs-com'
+
+
+  export default {
+    data() {
+      return {
+        name: '',
+        email: '',
+        message: ''
+      }
+    },
+    methods: {
+  submitForm() {
+    const templateParams = {
+      name: this.name,
+      email: this.email,
+      message: this.message
+    }
+
+    emailjs
+      .send('service_2wem0tp', 'template_fnyel2s', templateParams, '3lcPkK4z2zThlOxmI')
+      .then(() => {
+        alert('Your message has been sent!')
+      })
+      .catch(error => {
+        console.error(error)
+        alert('An error occurred while sending your message.')
+      })
+
+    this.name = ''
+    this.email = ''
+    this.message = ''
+  }
+}
+}
+  </script>
+
+<style>
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+}
+
+button[type='submit'] {
+  background-color: #007aff;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+</style>
