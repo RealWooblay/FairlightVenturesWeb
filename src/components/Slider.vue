@@ -1,6 +1,6 @@
 <template>
-    <div class="slider-container" :style="{backgroundImage: 'url(' + currentImage + ')'}">
-      <div class="slider-caption">{{ currentCaption }}</div>
+    <div class="slider-container" :style="{backgroundImage: 'url(' + currentImage + ')', opacity: showImage ? 1 : 0}">
+      <div class="slider-caption" :style="{opacity: showCaption ? 1 : 0}">{{ currentCaption }}</div>
     </div>
   </template>
   
@@ -20,7 +20,9 @@
           // add more images here
         ],
         currentIndex: 0,
-        intervalId: null
+        intervalId: null,
+        showImage: true,
+        showCaption: true
       }
     },
     computed: {
@@ -33,7 +35,13 @@
     },
     mounted() {
       this.intervalId = setInterval(() => {
-        this.currentIndex = (this.currentIndex + 1) % this.images.length
+        this.showImage = false
+        this.showCaption = false
+        setTimeout(() => {
+          this.currentIndex = (this.currentIndex + 1) % this.images.length
+          this.showImage = true
+          this.showCaption = true
+        }, 1000)
       }, 5000)
     },
     beforeUnmount() {
@@ -49,6 +57,7 @@
     background-position: center;
     background-size: cover;
     position: relative;
+    transition: opacity 1s ease-in-out;
   }
   
   .slider-caption {
@@ -61,5 +70,6 @@
     font-weight: bold;
     text-align: center;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    transition: opacity 2s ease-in-out;
   }
   </style>
