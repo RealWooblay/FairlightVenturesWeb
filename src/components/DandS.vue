@@ -47,31 +47,6 @@
                 </RouterLink>
               </div>
             </div>
-            <div class="col">
-                <img src="../assets/Pagebackground1.jpg" alt="IMG2">
-                <div class="name">David Plisek</div>
-                <div class="career">Cyber Guy</div>
-                <div class="quote">
-                    "Insert Quote Here"
-                </div>
-                <div class="socials">
-                    <a href="https://instagram.com">
-                        <font-awesome-icon icon="fa-brands fa-instagram" />
-                    </a>
-                    <a href="twitter.com">
-                        <font-awesome-icon icon="fa-brands fa-twitter" />
-                    </a>
-                    <a href="facebook.com">
-                        <font-awesome-icon icon="fa-brands fa-facebook" />
-                    </a>
-                    <a href="linkedin.com">
-                        <font-awesome-icon icon="fa-brands fa-linkedin" />
-                    </a>
-                    <a href="spotify.com">
-                        <font-awesome-icon icon="fa-solid fa-link" />
-                    </a>
-                </div>
-            </div>
         </div>
     </div>
 </template>

@@ -10,10 +10,18 @@
                 through scaling and capital raising,
                 <br>
                 <strong style="color:red; font-weight:normal">We have your back. </strong>
+                <br>
             </h1>
+            <router-link to="/contact">
+                <Button label="Work with Us" primary :to="{ path: '/contact'}" style="display: inline-block" :class="'storybook-button--new'"/>
+            </router-link>
         </div>
     </div>
 </template>
+
+<script setup>
+import Button from './Button.vue';
+</script>
 
 <style>
 .main-container {
@@ -28,6 +36,7 @@
 
 .info h1 {
     font-weight: lighter;
+    margin-bottom: 50px;
 }
 
 .info span {
@@ -40,5 +49,11 @@
   /* add additional file formats here */
   font-weight: lighter;
   font-style: italic;
+}
+.info Button {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 </style>

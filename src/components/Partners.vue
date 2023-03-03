@@ -3,47 +3,29 @@
         <video autoplay loop muted poster="../assets/HomeBackground.jpg" id="video-background">
             <source src="../assets/video.mp4" type="video/mp4">
         </video>
-        <h1>Clients</h1>
+        <h1>C L I E N T S</h1>
         <div class="row">
-            <img src="../assets/circle-png.webp" alt="1">
-            <img src="../assets/circle-png.webp" alt="2">
-            <img src="../assets/circle-png.webp" alt="3">
-            <img src="../assets/circle-png.webp" alt="4">
-            <img src="../assets/circle-png.webp" alt="5">
+            <img src="../assets/clients/Arqit_BW.jpeg" alt="1">
+            <img src="../assets/clients/Bugcrowd_BW.png" alt="2">
+            <img src="../assets/clients/DivisionX_BW.png" alt="3">
+            <img src="../assets/clients/Heo_BW.png" alt="4">
+            <img src="../assets/clients/Livingbridge_BW.jpeg" alt="5">
         </div>
         <div class="row">
-            <h3>Hello</h3>
-            <h3>Hello</h3>  
-            <h3>Hello</h3>  
-            <h3>Hello</h3>  
-            <h3>Hello</h3>            
-        </div>
-        <h1>Venture Builders</h1>
-        <div class="row">
-            <img src="../assets/circle-png.webp" alt="1">
-            <img src="../assets/circle-png.webp" alt="2">
-            <img src="../assets/circle-png.webp" alt="3">
-            <img src="../assets/circle-png.webp" alt="4">
-            <img src="../assets/circle-png.webp" alt="5">
-        </div>
-        <div class="row">
-            <h3>Hello</h3>
-            <h3>Hello</h3>  
-            <h3>Hello</h3>  
-            <h3>Hello</h3>  
-            <h3>Hello</h3>            
+            <img src="../assets/clients/Moxy_BW.png" alt="6">
+            <img src="../assets/clients/PRNTR_BW.png" alt="7">
+            <img src="../assets/clients/Red_Piranha_BW.png" alt="8">
+            <img src="../assets/clients/Winton_BW.png" alt="9">
+            <img src="../assets/clients/Livingbridge_BW.jpeg" alt="10">
         </div>
     </div>
 </template>
 
-<script setup>
-import Button from './Button.vue';
-</script>
-
 <style scoped>
 .main-container {
-    color: #E9EAEC;
+    color: rgb(112, 112, 112);
     position: relative;
+    background: linear-gradient(135deg, #ffffff, #e8e8e8, #ffffff);
 }
 #video-background {
     position: absolute;
@@ -57,10 +39,12 @@ import Button from './Button.vue';
 .main-container h1 {
     display: flex;
     justify-content: center;
+    padding-top: 60px;
     padding-bottom: 40px;
-    padding-top: 30px;
-    font-size: 22px;
-    text-shadow: 1px 1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, -1px -1px 1px #000;
+    font-size: 42px;
+    font-weight: bold;
+    font-family: "Playfair";
+
 }
 .row {
     display: flex;
@@ -69,15 +53,24 @@ import Button from './Button.vue';
     padding-left: 150px;
     padding-right: 150px;
     background-color: transparent;
-    color: #e9e9e9;
+    color: rgb(112, 112, 112);
 }
 .row img {
     width: 100px;
+    padding-bottom: 50px;
 }
 
 .row h3 {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+}
+
+@font-face {
+  font-family: 'Playfair';
+  src: url('../assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+  /* add additional file formats here */
+  font-weight: lighter;
+  font-style: italic;
 }
 </style>
