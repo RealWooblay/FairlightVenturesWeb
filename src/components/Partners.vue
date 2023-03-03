@@ -3,7 +3,7 @@
         <video autoplay loop muted poster="../assets/HomeBackground.jpg" id="video-background">
             <source src="../assets/video.mp4" type="video/mp4">
         </video>
-        <h1>Venture Partners</h1>
+        <h1>Clients</h1>
         <div class="row">
             <img src="../assets/circle-png.webp" alt="1">
             <img src="../assets/circle-png.webp" alt="2">

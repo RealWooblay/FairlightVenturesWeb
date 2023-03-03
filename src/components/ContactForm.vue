@@ -16,7 +16,7 @@
     </form>
   </template>
 
-  <script>
+<script>
   import emailjs from 'emailjs-com'
 
 
@@ -52,7 +52,7 @@
   }
 }
 }
-  </script>
+</script>
 
 <style>
 label {
