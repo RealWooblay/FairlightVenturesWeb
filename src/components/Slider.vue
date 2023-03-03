@@ -1,7 +1,7 @@
 <template>
     <div class="slider-container" :style="{backgroundImage: 'url(' + currentImage + ')', opacity: showImage ? 1 : 0}">
       <div class="slider-caption" :style="{opacity: showCaption ? 1 : 0}">{{ currentCaption }}</div>
-      <div class="Button"><button @click="nextSlide"><i class="fa-regular fa-arrow-right"></i></button></div>
+      <div class="Button"><button @click="nextSlide"><font-awesome-icon class="icon"  icon="fa-arrow-right" /></button></div>
     </div>
   </template>
   
@@ -84,4 +84,9 @@
     padding-right: 20px;
     padding-top: 200px;
   }
+.icon {
+    font-size: 30px;
+    background-color: transparent;
+}
+
   </style>
