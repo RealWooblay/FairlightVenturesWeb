@@ -37,6 +37,7 @@ import Button from './Storybook/Button.vue';
 .info h1 {
     font-weight: lighter;
     margin-bottom: 50px;
+    line-height: 118px;
 }
 
 .info span {

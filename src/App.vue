@@ -70,7 +70,7 @@ nav {
 }
 @media (max-width: 500px) {
   .links a {
-    font-size: 20px;
+    font-size: 12px;
   }
 }
 
