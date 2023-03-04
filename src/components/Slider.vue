@@ -11,12 +11,12 @@
       return {
         images: [
           {
-            src: 'src/assets/HomeBackground.jpg',
-            caption: 'Caption for image 1'
+            src: 'src/assets/Rocket_research-bro.png',
+            caption: 'Empowering innovation and driving change - together'
           },
           {
-            src: 'src/assets/redcardinal.png',
-            caption: 'Caption for image 2'
+            src: '',
+            caption: 'Our mission: to empower entrepreneurs and innovators to solve the world\'s most pressing problems.'
           },
           // add more images here
         ],
@@ -62,6 +62,7 @@
     height: 500px;
     background-position: center;
     background-size: cover;
+    background-color: white;
     position: relative;
     transition: opacity 1s ease-in-out;
   }
@@ -71,22 +72,20 @@
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    color: #fff;
-    font-size: 24px;
+    color: rgb(112, 112, 112);
+    font-size: 45px;
     font-weight: bold;
     text-align: center;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
     transition: opacity 2s ease-in-out;
+    padding-bottom: 100px;
   }
-  .Button {
-    display: flex;
-    justify-content: right;
-    padding-right: 20px;
-    padding-top: 200px;
-  }
+
 .icon {
     font-size: 30px;
-    background-color: transparent;
+}
+
+.Button button {
+  cursor: pointer;
 }
 
   </style>

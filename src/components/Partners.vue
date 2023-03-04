@@ -50,6 +50,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
+    gap: 150px;
     padding-left: 150px;
     padding-right: 150px;
     background-color: transparent;

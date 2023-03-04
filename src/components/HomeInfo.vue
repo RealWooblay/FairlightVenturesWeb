@@ -12,7 +12,7 @@
                 <strong style="color:red; font-weight:normal">We have your back. </strong>
                 <br>
             </h1>
-            <router-link to="/contact">
+            <router-link to="/contact" class="But">
                 <Button label="Work with Us" primary :to="{ path: '/contact'}" style="display: inline-block" :class="'storybook-button--new'"/>
             </router-link>
         </div>
@@ -20,7 +20,7 @@
 </template>
 
 <script setup>
-import Button from './Button.vue';
+import Button from './Storybook/Button.vue';
 </script>
 
 <style>
@@ -55,5 +55,8 @@ import Button from './Button.vue';
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    left: 380px;
 }
+
 </style>
