@@ -1,13 +1,21 @@
 <template>
   <div class="slider-container">
-    <video autoplay muted loop :src="currentVideo" :style="{opacity: showVideo ? 1 : 0}">
+    <video autoplay muted loop :src="currentVideo" :style="{opacity: showVideo ? 1 : 0, transition: 'opacity 2s ease-in-out'}">
     </video>
-    <div class="slider-caption" :style="{opacity: showCaption ? 1 : 0}">{{ currentCaption }}</div>
-    <div class="Button"><button @click="nextSlide"><font-awesome-icon class="icon"  icon="fa-arrow-right" /></button></div>
+    <div class="slider-caption" :style="{opacity: showCaption ? 1 : 0, transition: 'opacity 2s ease-in-out'}">{{ currentCaption }}</div>
+    <div class="Button" :style="{opacity: showButtons ? 1 : 0, transition: 'opacity 2s ease-in-out'}">
+      <button @click="nextSlide"><font-awesome-icon class="icon"  icon="fa-arrow-right" /></button>
+    </div>
+    <div class="Contact">
+      <router-link to="/contact">
+        <button  :style="{opacity: showButtons ? 1 : 0, transition: 'opacity 2s ease-in-out'}">Get in Touch</button>
+      </router-link>
+    </div>
   </div>
 </template>
 
 <script>
+
 export default {
   data() {
     return {
@@ -17,15 +25,20 @@ export default {
           caption: 'Empowering innovation and driving change - together'
         },
         {
-          src: 'src/assets/whitetech.mp4',
+          src: 'src/assets/City.mp4',
           caption: 'Our mission: to empower entrepreneurs and innovators to solve the world\'s most pressing problems.'
+        },
+        {
+        src: 'src/assets/City.mp4',
+        caption: 'Our mission: to empower entrepreneurs and innovators to solve the world\'s most pressing problems.'
         },
         // add more videos here
       ],
       currentIndex: 0,
       intervalId: null,
       showVideo: true,
-      showCaption: true
+      showCaption: true,
+      showButton: true
     }
   },
   computed: {
@@ -40,11 +53,13 @@ export default {
     this.intervalId = setInterval(() => {
       this.showVideo = false
       this.showCaption = false
+      this.showButton = false
       setTimeout(() => {
         this.currentIndex = (this.currentIndex + 1) % this.videos.length
         this.showVideo = true
         this.showCaption = true
-      }, 0)
+        this.showButton = true
+      }, 2000)
     }, 10000)
   },
   beforeUnmount() {
@@ -64,7 +79,6 @@ export default {
   height: 500px;
   background-color: white;
   position: relative;
-  transition: opacity 1s ease-in-out;
 }
 
 .slider-container video {
@@ -79,14 +93,12 @@ export default {
 .slider-caption {
   position: absolute;
   bottom: 20px;
-  left: 50%;
+  left: 35%;
   transform: translateX(-50%);
   color: red;
   font-size: 45px;
   font-weight: bold;
-  text-align: center;
-  transition: opacity 2s ease-in-out;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
 }
 
 .icon {
@@ -94,6 +106,19 @@ export default {
 }
 
 .Button button {
+  cursor: pointer;
+  position: absolute;
+  top: 250px;
+  right: 50px;
+}
+
+.Contact button {
+  font-size: 20px;
+  top: 300px;
+  left: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 50px;
   cursor: pointer;
 }
 </style>
