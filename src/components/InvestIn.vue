@@ -46,7 +46,7 @@
 .text span {
     color: red;
     font-size: 45px;
-    font-family: "Playfair";
+    font-family: "TT";
     font-weight: lighter;
 }
 
@@ -55,8 +55,8 @@
 }
 
 @font-face {
-  font-family: 'Playfair';
-  src: url('../assets/fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
+  font-family: 'TT';
+  src: url('../assets/fonts/src/assets/fonts/Old_Standard_TT/OldStandardTT-Regular.ttf') format('truetype');
   /* add additional file formats here */
   font-weight: lighter;
   font-style: italic;

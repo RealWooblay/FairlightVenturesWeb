@@ -67,13 +67,16 @@
   line-height: 1;
 }
 .storybook-button--primary { /* In use */
-  color: #000;
-  background-color: #fad02c;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
   font-size: 16px;
-  padding: 10px 84px;
+  padding: 15px 44px;
+  border-radius: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-transform: uppercase;
 }
 
 
