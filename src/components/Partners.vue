@@ -13,7 +13,7 @@
             <img src="../assets/clients/PRNTR_BW.png" alt="7">
             <img src="../assets/clients/Red_Piranha_BW.png" alt="8">
             <img src="../assets/clients/Winton_BW.png" alt="9">
-            <img src="../assets/clients/Livingbridge_BW.jpeg" alt="10">
+            <img src="../assets/clients/SWG.png" alt="10">
         </div>
     </div>
 </template>

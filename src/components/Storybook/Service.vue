@@ -36,6 +36,11 @@
     height: 400px;
     color: black;
   }
+
+  .col2:hover {
+  transition: 1s;
+  box-shadow: 5px 5px 20px rgba(255, 0, 0, 0.5);
+  }
   
   .main.right {
     grid-template-columns: 1fr 1fr;
