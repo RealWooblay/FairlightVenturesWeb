@@ -22,5 +22,27 @@ import Footer from '../components/Footer.vue';
 .main {
     background: linear-gradient(135deg, #ffffff, #e8e8e8, #ffffff);
 }
+@font-face {
+  font-family: 'Bog';
+  src: url('../assets/fonts/Bogart-Light-Italic-trial.ttf') format('truetype');
+  /* add additional file formats here */
+  font-weight: lighter;
+  font-style: italic;
+}
 
+@font-face {
+  font-family: 'Bolds';
+  src: url('../assets/fonts/TT_Chocolates_Trial_DemiBold.otf') format('truetype');
+  /* add additional file formats here */
+  font-weight: lighter;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Reg';
+  src: url('../assets/fonts/TT_Chocolates_Trial_Light.otf') format('truetype');
+  /* add additional file formats here */
+  font-weight: lighter;
+  font-style: italic;
+}
 </style>

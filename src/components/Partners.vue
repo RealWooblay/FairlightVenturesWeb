@@ -1,6 +1,6 @@
 <template>
     <div class="main-container">
-        <h1>C L I E N T S</h1>
+        <h1>C l i e n t s</h1>
         <div class="row">
             <img src="../assets/clients/Arqit_BW.jpeg" alt="1">
             <img src="../assets/clients/Bugcrowd_BW.png" alt="2">
@@ -71,6 +71,19 @@
   /* add additional file formats here */
   font-weight: lighter;
   font-style: italic;
+}
+
+@media (max-width: 1100px) {
+    .row img {
+        width: 40px;
+    }
+    .row {
+        gap: 25px;
+    }
+    .main-container h1 {
+        font-size: 20px;
+        padding-top: 30px;
+    }
 }
 
 </style>

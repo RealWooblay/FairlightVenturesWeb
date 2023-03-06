@@ -1,13 +1,13 @@
 <template>
     <div class="main">
         <div class="text">
-            <h1>We're not just investing in Ideas:</h1>
+            <h1>We're not just investing in ideas:</h1>
             <br>
             <h2>Calling those who are
                 <br>
-                <span>Passionate</span>
-                <span>Driven</span>
-                and Commited to <span>Making a Difference</span></h2>
+                <span>passionate</span>
+                <span>driven</span>
+                and commited to <span>making a difference</span></h2>
         </div>
         <div class="image">
             <img src="../assets/Rocket_research-bro.png">
@@ -18,60 +18,54 @@
 <style scoped>
 
 .main {
-    padding-top: 50px;
+    margin-top: 150px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     background: linear-gradient(135deg, #ffffff, #e8e8e8, #ffffff);
     color: black;
-    padding-bottom: 40px;
+    margin-bottom: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border: 1px solid grey;
 }
 
+.main:hover {
+    box-shadow: 0px 0px 5px red;
+    transition: 0.5s;
+}
+
+
 .text h1 {
-    font-size: 40px;
+    font-size: 30px;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
-    align-items: left;
-    justify-content: left;
-    font-family: "Reg";
-    padding-left: 20px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Bolds";
 }
 
 .text h2 {
     font-size: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: left;
-    font-style: italic;
     font-family: "Reg";
-    padding-left: 20px;
+    margin-left: 150px;
+    padding-bottom: 50px;
 }
 
 .text span {
     color: red;
     font-size: 30px;
-    font-family: "Bolds";
-    font-weight: lighter;
+    font-family: "Bog";
 }
 
 .image img {
     width: 350px;
-}
-
-@font-face {
-  font-family: 'Bolds';
-  src: url('../assets/fonts/TT_Chocolates_Trial_DemiBold.otf') format('truetype');
-  /* add additional file formats here */
-  font-weight: lighter;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Reg';
-  src: url('../assets/fonts/TT_Chocolates_Trial_Light.otf') format('truetype');
-  /* add additional file formats here */
-  font-weight: lighter;
-  font-style: italic;
+    position: absolute;
+    right: 40%;
 }
 
 </style>

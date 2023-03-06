@@ -26,8 +26,8 @@
 }
 .main {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    padding: 60px;
+    grid-template-columns: 1fr 1.1fr;
+    padding: 40px;
     background: lightgray;
     border-radius: 0%;
     color: black;
@@ -35,12 +35,16 @@
 }
 
 .col1 {
-    padding: 30px;
+    width: 500px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     font-size: 15px;
 }
 
 .col2 img {
     width: 400px;
+    position: absolute;
+    left: 40%;
 }
 
 .col1 span {

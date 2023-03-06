@@ -107,4 +107,15 @@
     left: 600px;
     font-size: 12px;
 }
+
+@media (max-width: 1100px) {
+    .copyright {
+        display: none;
+    }
+
+    .row img {
+        width: 50px;
+        height: 50px;
+    }
+}
 </style>

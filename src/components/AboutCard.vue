@@ -44,10 +44,9 @@ video {
 .text h1, span {
     color: whitesmoke;
     font-size: 50px;
-    font-weight: bold;
-    -webkit-text-stroke: 2px black;
-    text-shadow: 0 0 2px black;
-    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 0 0 1px black;
+    font-family: "Bolds";
 }
 .text span {
     color: red;
@@ -76,4 +75,27 @@ video {
   font-style: italic;
 }
 
+@media (max-width: 1079px) {
+    .text h1, span {
+        font-size: 20px;
+        text-shadow: 0 0 1px black;
+        -webkit-text-stroke: 1px black;
+    }
+
+    .text {
+        top: 5%;
+    }
+
+    .button {
+        font-size: 10px;
+        padding: 8px;
+    }
+    .But {
+        bottom: 10%;
+    }
+
+    .main {
+        height: 26vh;
+    }
+}
 </style>

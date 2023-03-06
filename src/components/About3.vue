@@ -46,7 +46,7 @@ import Button from './Storybook/Button.vue';
 
 .r2 h2 {
     font-family: "Reg";
-    font-size: 40px;
+    font-size: 35px;
     text-align: center;
 }
 

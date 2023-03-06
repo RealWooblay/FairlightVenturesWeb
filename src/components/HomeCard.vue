@@ -78,9 +78,10 @@ video {
   font-style: italic;
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 1079px) {
     .text h1, span {
-        font-size: 20px;
+        font-size: 30px;
         text-shadow: 0 0 1px black;
         -webkit-text-stroke: 1px black;
     }
