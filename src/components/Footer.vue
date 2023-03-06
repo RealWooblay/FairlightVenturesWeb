@@ -48,7 +48,7 @@
 .footer {
     display: grid;
     grid-template-columns: 1fr 2fr 0.5fr;
-    background-color: #040720;
+    background-color: black;
     padding-bottom: 20px;
 }
 
@@ -63,7 +63,6 @@
     padding-top: 30px;
     padding-bottom: 10px;
     font-style: italic;
-    padding-left: 20px;
     font-size: 15px;
     color: #e9eaec;
 }
@@ -71,6 +70,7 @@
     font-size: 14px;
     color: #e9eaec;
     text-decoration: none;
+    display: block;
 }
 
 .row img {
@@ -87,7 +87,15 @@
     align-items: center;
     font-size: 25px;
     color: #e9eaec;
-    padding-left: 90px;
+    margin-left: 130px;
+}
+
+.row2 a:hover {
+    color: red;
+}
+
+.row a:hover {
+    color: red;
 }
 
 .copyright {
