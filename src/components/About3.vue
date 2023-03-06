@@ -1,7 +1,7 @@
 <template>
     <div class="main">
         <div class="r1">
-            <img src="src/assets/redcardinal.png">
+            <img src="../assets/redcardinal.png">
         </div>
         <div class="r2">
             <h2>At Fairlight Ventures, we want to make a difference, <br>
