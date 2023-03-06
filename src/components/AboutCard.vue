@@ -6,8 +6,8 @@
             </video>
         </div>
         <div class="text">
-            <h1><span>Our mission:</span> <br>
-                to empower entrepreneurs and innovators <br>
+            <h1>
+                Empowering entrepreneurs and innovators <br>
                 to solve the world's most pressing problems.
             </h1>
         </div>
@@ -26,7 +26,7 @@ import Button from '../components/Storybook/Button.vue';
 <style scoped>
 
 .main {
-    height: 60vh;
+    height: 50vh;
 }
 
 video {
@@ -47,11 +47,11 @@ video {
     font-weight: bold;
     -webkit-text-stroke: 2px black;
     text-shadow: 0 0 2px black;
-    text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
 }
 .text span {
     color: red;
+    font-family: "Bolds";
 }
 
 .But {
@@ -60,5 +60,20 @@ video {
     left: 30px;
 }
 
+@font-face {
+  font-family: 'Bolds';
+  src: url('../assets/fonts/TT_Chocolates_Trial_DemiBold.otf') format('truetype');
+  /* add additional file formats here */
+  font-weight: lighter;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Reg';
+  src: url('../assets/fonts/TT_Chocolates_Trial_Light.otf') format('truetype');
+  /* add additional file formats here */
+  font-weight: lighter;
+  font-style: italic;
+}
 
 </style>

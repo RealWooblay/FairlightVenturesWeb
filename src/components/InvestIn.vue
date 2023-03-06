@@ -1,8 +1,5 @@
 <template>
     <div class="main">
-        <div class="image">
-            <img src="../assets/Android-amico.png">
-        </div>
         <div class="text">
             <h1>We're not just investing in Ideas:</h1>
             <br>
@@ -23,16 +20,20 @@
 .main {
     padding-top: 50px;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 2fr 1fr;
     background: linear-gradient(135deg, #ffffff, #e8e8e8, #ffffff);
     color: black;
+    padding-bottom: 40px;
 }
 
 .text h1 {
     font-size: 40px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
+    justify-content: left;
+    font-family: "Reg";
+    padding-left: 20px;
 }
 
 .text h2 {
@@ -40,13 +41,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: left;
     font-style: italic;
+    font-family: "Reg";
+    padding-left: 20px;
 }
 
 .text span {
     color: red;
-    font-size: 45px;
-    font-family: "TT";
+    font-size: 30px;
+    font-family: "Bolds";
     font-weight: lighter;
 }
 
@@ -55,10 +59,19 @@
 }
 
 @font-face {
-  font-family: 'TT';
-  src: url('../assets/fonts/Old_Standard_TT/OldStandardTT-Regular.ttf') format('truetype');
+  font-family: 'Bolds';
+  src: url('../assets/fonts/TT_Chocolates_Trial_DemiBold.otf') format('truetype');
   /* add additional file formats here */
   font-weight: lighter;
   font-style: italic;
 }
+
+@font-face {
+  font-family: 'Reg';
+  src: url('../assets/fonts/TT_Chocolates_Trial_Light.otf') format('truetype');
+  /* add additional file formats here */
+  font-weight: lighter;
+  font-style: italic;
+}
+
 </style>

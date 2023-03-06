@@ -73,5 +73,4 @@ video {
     left: 45%;
 }
 
-
 </style>

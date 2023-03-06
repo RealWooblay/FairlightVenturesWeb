@@ -65,9 +65,12 @@
   }
   
   .image {
-    width: 100%;
+    width: 500px;
     max-height: 400px;
     object-fit: cover;
+    display: flex;
+    justify-content: right;
+    align-items: right;
   }
   
   .title {
@@ -75,18 +78,26 @@
     font-weight: bold;
     margin: 0;
     margin-top: 20px;
-    font-family: "Arial";
+    font-family: "Bolds";
   }
   
   .secondary-text {
     font-size: 28px;
     margin-top: 10px;
-    font-family: "TT";
+    font-family: "Reg";
   }
 
   @font-face {
-  font-family: 'TT';
-  src: url('../assets/fonts/Old_Standard_TT/OldStandardTT-Regular.ttf') format('truetype');
+  font-family: 'Bolds';
+  src: url('../assets/fonts/TT_Chocolates_Trial_DemiBold.otf') format('truetype');
+  /* add additional file formats here */
+  font-weight: lighter;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Reg';
+  src: url('../assets/fonts/TT_Chocolates_Trial_Light.otf') format('truetype');
   /* add additional file formats here */
   font-weight: lighter;
   font-style: italic;

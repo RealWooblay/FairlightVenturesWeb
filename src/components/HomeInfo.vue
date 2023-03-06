@@ -9,7 +9,7 @@
                 <br>
                 through scaling and capital raising,
                 <br>
-                <strong style="color:red; font-weight:normal">We have your back. </strong>
+                <strong style="color:red; font-weight:normal; font-family: Bolds;">We have your back. </strong>
                 <br>
             </h1>
             <router-link to="/contact" class="But">
@@ -37,16 +37,33 @@ import Button from './Storybook/Button.vue';
 .info h1 {
     font-weight: lighter;
     margin-bottom: 50px;
-    line-height: 118px;
+    line-height: 80px;
+    font-family: 'Reg';
 }
 
 .info span {
-    font-family: 'Playfair';
+    font-family: 'Bog';
 }
 
 @font-face {
-  font-family: 'Playfair';
-  src: url('../assets/fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
+  font-family: 'Bolds';
+  src: url('../assets/fonts/TT_Chocolates_Trial_DemiBold.otf') format('truetype');
+  /* add additional file formats here */
+  font-weight: lighter;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Reg';
+  src: url('../assets/fonts/TT_Chocolates_Trial_Light.otf') format('truetype');
+  /* add additional file formats here */
+  font-weight: lighter;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Bog';
+  src: url('../assets/fonts/Bogart-Light-Italic-trial.ttf') format('truetype');
   /* add additional file formats here */
   font-weight: lighter;
   font-style: italic;

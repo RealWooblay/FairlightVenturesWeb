@@ -104,12 +104,20 @@
 .storybook-button--new {
   color: #000;
   background-color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.5) 1px 2px 0px 2px inset;
   border-radius: 40px;
   font-size: 40px;
   padding: 40px 184px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Bolds";
+}
+
+@font-face {
+  font-family: 'Bolds';
+  src: url('../assets/fonts/TT_Chocolates_Trial_DemiBold.otf') format('truetype');
+  /* add additional file formats here */
+  font-weight: lighter;
+  font-style: italic;
 }
 </style>

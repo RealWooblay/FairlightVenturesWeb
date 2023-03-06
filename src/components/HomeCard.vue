@@ -6,8 +6,8 @@
             </video>
         </div>
         <div class="text">
-            <h1>EMPOWERING INNOVATION AND DRIVING CHANGE
-                <br><span> - TOGETHER</span></h1>
+            <h1>Empowering innovation and driving change,
+                <span> together</span></h1>
         </div>
         <div class="But">
             <router-link to="/contact">
@@ -44,10 +44,13 @@ video {
     color: darkgrey;
     font-size: 55px;
     font-weight: bold;
-    -webkit-text-stroke: 2px black;
-    text-shadow: 0 0 2px black;
-    text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 0 0 1px black;
+    font-family: "Bolds";
+}
+
+.text h1 {
+    font-family: "Bolds";
 }
 .text span {
     color: red;
@@ -57,6 +60,22 @@ video {
     position: absolute;
     bottom: 30%;
     left: 30px;
+}
+
+@font-face {
+  font-family: 'Bolds';
+  src: url('../assets/fonts/TT_Chocolates_Trial_DemiBold.otf') format('truetype');
+  /* add additional file formats here */
+  font-weight: lighter;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Reg';
+  src: url('../assets/fonts/TT_Chocolates_Trial_Light.otf') format('truetype');
+  /* add additional file formats here */
+  font-weight: lighter;
+  font-style: italic;
 }
 
 @media (max-width: 768px) {

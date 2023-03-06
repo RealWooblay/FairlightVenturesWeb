@@ -45,7 +45,7 @@ import Button from './Storybook/Button.vue';
 }
 
 .r2 h2 {
-    font-family: "TT";
+    font-family: "Reg";
     font-size: 40px;
     text-align: center;
 }
@@ -58,14 +58,14 @@ import Button from './Storybook/Button.vue';
     text-decoration: none;
 }
 
-
 @font-face {
-  font-family: 'TT';
-  src: url('../assets/fonts/Old_Standard_TT/OldStandardTT-Regular.ttf') format('truetype');
+  font-family: 'Reg';
+  src: url('../assets/fonts/TT_Chocolates_Trial_Light.otf') format('truetype');
   /* add additional file formats here */
   font-weight: lighter;
   font-style: italic;
 }
+
 
 
 </style>

@@ -40,7 +40,7 @@
     padding-bottom: 40px;
     font-size: 42px;
     font-weight: bold;
-    font-family: "Playfair";
+    font-family: "Bog";
 
 }
 .row {
@@ -66,10 +66,11 @@
 }
 
 @font-face {
-  font-family: 'Playfair';
-  src: url('../assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+  font-family: 'Bog';
+  src: url('../assets/fonts/Bogart-Light-Italic-trial.ttf') format('truetype');
   /* add additional file formats here */
   font-weight: lighter;
   font-style: italic;
 }
+
 </style>
