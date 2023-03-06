@@ -1,8 +1,5 @@
 <template>
     <div class="main-container">
-        <video autoplay loop muted poster="../assets/HomeBackground.jpg" id="video-background">
-            <source src="../assets/video.mp4" type="video/mp4">
-        </video>
         <h1>C L I E N T S</h1>
         <div class="row">
             <img src="../assets/clients/Arqit_BW.jpeg" alt="1">
