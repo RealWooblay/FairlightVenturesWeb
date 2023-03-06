@@ -20,7 +20,7 @@ import Footer from '../components/Footer.vue';
 <style>
 
 .main {
-    background-color: white;
+    background: linear-gradient(135deg, #ffffff, #e8e8e8, #ffffff);
 }
 
 </style>

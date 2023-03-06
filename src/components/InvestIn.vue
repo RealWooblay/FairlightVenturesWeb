@@ -24,7 +24,7 @@
     padding-top: 50px;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    background-color: white;
+    background: linear-gradient(135deg, #ffffff, #e8e8e8, #ffffff);
     color: black;
 }
 
@@ -56,7 +56,7 @@
 
 @font-face {
   font-family: 'TT';
-  src: url('../assets/fonts/src/assets/fonts/Old_Standard_TT/OldStandardTT-Regular.ttf') format('truetype');
+  src: url('../assets/fonts/Old_Standard_TT/OldStandardTT-Regular.ttf') format('truetype');
   /* add additional file formats here */
   font-weight: lighter;
   font-style: italic;

@@ -22,7 +22,7 @@ import {RouterView, RouterLink } from "vue-router"
 
 <style scoped>
 nav {
-  background: linear-gradient(135deg, #4f4f4f, #161616, #4f4f4f);
+  background: linear-gradient(135deg, #ffffff, #e8e8e8, #ffffff);
   border-left: 1px solid red;
   border-right: 1px solid red;
 }
@@ -39,7 +39,7 @@ nav {
 
 .links a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 35px;
   display: flex;
   justify-content: center;

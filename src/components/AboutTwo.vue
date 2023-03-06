@@ -38,7 +38,7 @@
     grid-template-columns: 2fr 0.2fr 1fr;
     padding: 100px;
     padding: 50px;
-    background: linear-gradient(lightgrey, white, lightgrey);
+    background: linear-gradient(135deg, #989898, #e8e8e8, #989898);
     border-radius: 20%;
     color: black;
 }

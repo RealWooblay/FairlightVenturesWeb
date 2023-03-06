@@ -60,7 +60,7 @@ import Footer from '../components/Footer.vue';
     padding-bottom: 50px;
     display: flex;
     justify-content: center;
-    background: linear-gradient(135deg, #e4e4e4, #9b9b9b, #e4e4e4);
+    background: linear-gradient(135deg, #ffffff, #e8e8e8, #ffffff);
 }
 
 </style>

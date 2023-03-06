@@ -33,7 +33,7 @@ video {
 
 .text {
     position: absolute;
-    top: 15%;
+    top: 5%;
     padding-left: 30px;
 }
 

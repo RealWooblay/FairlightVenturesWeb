@@ -23,6 +23,7 @@ import Button from './Storybook/Button.vue';
 <style>
 .main {
     color: black;
+    background: linear-gradient(135deg, #ffffff, #e8e8e8, #ffffff);
 }
 
 .r1 {
@@ -60,7 +61,7 @@ import Button from './Storybook/Button.vue';
 
 @font-face {
   font-family: 'TT';
-  src: url('../assets/fonts/src/assets/fonts/Old_Standard_TT/OldStandardTT-Regular.ttf') format('truetype');
+  src: url('../assets/fonts/Old_Standard_TT/OldStandardTT-Regular.ttf') format('truetype');
   /* add additional file formats here */
   font-weight: lighter;
   font-style: italic;

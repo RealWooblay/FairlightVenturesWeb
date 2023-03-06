@@ -152,7 +152,7 @@ export default {
 
 @font-face {
   font-family: 'TT';
-  src: url('../assets/fonts/src/assets/fonts/Old_Standard_TT/OldStandardTT-Regular.ttf') format('truetype');
+  src: url('../assets/fonts/Old_Standard_TT/OldStandardTT-Regular.ttf') format('truetype');
   /* add additional file formats here */
   font-weight: lighter;
   font-style: italic;
