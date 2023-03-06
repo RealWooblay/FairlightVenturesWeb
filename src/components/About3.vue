@@ -10,7 +10,7 @@
         </div>
         <div class="r3">
             <router-link to="/services" class="but">
-                <Button label="Discover Our Services" primary :to="{ path: '/contact'}"/>
+                <Button label="Discover Our Services" primary :to="{ path: '/contact'}" :class="'storybook-button--secondary'"/>
             </router-link>
         </div>
     </div>

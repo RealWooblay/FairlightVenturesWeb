@@ -4,7 +4,6 @@
   
   <script>
   import { reactive, computed } from 'vue';
-  import { useRoute } from 'vue-router';
   
   export default {
     name: 'my-button',
@@ -36,7 +35,6 @@
   
     setup(props, { emit }) {
       props = reactive(props);
-      const route = useRoute()
       return {
         classes: computed(() => ({
           'storybook-button': true,
@@ -49,7 +47,6 @@
         })),
         onClick() {
           emit('click');
-          route.push(props.to)
         }
       }
     },
@@ -82,9 +79,15 @@
 
 .storybook-button--secondary {
   color: #333;
-  background-color: transparent;
+  background-color: whitesmoke;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
 }
+
+.storybook-button--secondary:hover {
+  transition: 0.8s;
+  background-color: rgb(255, 85, 85);
+}
+
 .storybook-button--small {
   font-size: 12px;
   padding: 10px 16px;
