@@ -1,7 +1,6 @@
 <template>
     <div class="main">
         <ServicesCard/>
-        <div class="seperator"></div>
         <Service 
         imagePath="src\assets\Services\HS.jpg" 
         title="Advisory" 
