@@ -1,12 +1,10 @@
 <template>
-    <div class="main">
         <AboutCard/>
         <InvestIn/>
         <AboutTwo/>
         <About3/>
         <Partners/>
-        <Footer/>
-    </div>  
+        <Footer/> 
 </template>
 
 <script setup>

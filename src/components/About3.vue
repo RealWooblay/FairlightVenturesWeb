@@ -33,6 +33,7 @@ import Button from './Storybook/Button.vue';
 }
 
 .r1 img {
+    padding-top: 50px;
     width: 100px;
 }
 
