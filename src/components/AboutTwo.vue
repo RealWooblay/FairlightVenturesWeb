@@ -11,7 +11,7 @@
                 in emerging technologies and beyond. </h2>
         </div>
         <div class="col2">
-            <img src="src/assets/BussTec.png">
+            <img src="../assets/BussTec.png">
         </div>
         <div class="col3">
             <h2>We bring our:
