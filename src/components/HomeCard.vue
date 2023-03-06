@@ -25,6 +25,7 @@ import Button from '../components/Storybook/Button.vue';
 
 .main {
     background: linear-gradient(135deg, #ffffff, #e8e8e8, #ffffff);
+    height: 70vh; /* set full height of viewport */
 }
 
 video {
@@ -58,5 +59,28 @@ video {
     left: 30px;
 }
 
+@media (max-width: 768px) {
+    .text h1, span {
+        font-size: 20px;
+        text-shadow: 0 0 1px black;
+        -webkit-text-stroke: 1px black;
+    }
+
+    .text {
+        top: 5%;
+    }
+
+    .button {
+        font-size: 10px;
+        padding: 8px;
+    }
+    .But {
+        bottom: 10%;
+    }
+
+    .main {
+        height: 26vh;
+    }
+}
 
 </style>

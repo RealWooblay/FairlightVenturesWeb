@@ -13,7 +13,7 @@
                 <br>
             </h1>
             <router-link to="/contact" class="But">
-                <Button label="Work with Us" primary :to="{ path: '/contact'}" style="display: inline-block" :class="'storybook-button--new'"/>
+                <Button class="bwt" label="Work with Us" primary :to="{ path: '/contact'}" style="display: inline-block" :class="'storybook-button--new'"/>
             </router-link>
         </div>
     </div>
@@ -58,6 +58,25 @@ import Button from './Storybook/Button.vue';
     align-items: center;
     position: relative;
     left: 380px;
+}
+
+@media (max-width: 768px) {
+    .info {
+        font-size: 13px;
+    }
+
+    .info h1 {
+        line-height: 54px;
+        margin-bottom: 0px;
+    }
+    .info Button {
+    left: 80px;
+    }
+    .info .bwt {
+        font-size: 10px;
+        padding: 15px;
+        box-shadow: none;
+    }
 }
 
 </style>

@@ -25,6 +25,10 @@ import Button from '../components/Storybook/Button.vue';
 
 <style scoped>
 
+.main {
+    height: 60vh;
+}
+
 video {
     height: 500px;
     width: 100%;
@@ -39,7 +43,7 @@ video {
 
 .text h1, span {
     color: whitesmoke;
-    font-size: 55px;
+    font-size: 50px;
     font-weight: bold;
     -webkit-text-stroke: 2px black;
     text-shadow: 0 0 2px black;
@@ -52,7 +56,7 @@ video {
 
 .But {
     position: absolute;
-    bottom: 20%;
+    bottom: 15%;
     left: 30px;
 }
 
