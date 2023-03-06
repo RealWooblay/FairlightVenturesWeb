@@ -26,7 +26,7 @@ import Button from './Storybook/Button.vue';
 <style>
 .main-container {
     background: linear-gradient(135deg, #ffffff, #e8e8e8, #ffffff);
-    color: rgb(112, 112, 112);
+    color: rgb(51, 51, 51);
 }
 
 .info {

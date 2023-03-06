@@ -23,7 +23,7 @@
 
 <style scoped>
 .main-container {
-    color: rgb(112, 112, 112);
+    color: rgb(51, 51, 51);
     position: relative;
     background: linear-gradient(135deg, #ffffff, #e8e8e8, #ffffff);
 }

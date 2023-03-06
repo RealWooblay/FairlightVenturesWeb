@@ -22,7 +22,7 @@
 </template>
 
 <script setup>
-import Button from './Storybook/Button.vue';
+import Button from '../Storybook/Button.vue';
 </script>
 
 <style scoped>
@@ -34,7 +34,7 @@ a {
     grid-template-columns: 1fr 1fr 1fr; /*create two equal columns */
     padding-top: 40px;
     padding-bottom: 50px;
-    background-color: #E9EAEC;
+    background-color: white;
     color: #000;
 }
 
@@ -66,7 +66,7 @@ a {
     z-index: 1;
 }
 .main {
-    background-color: #E9EAEC;
+    background-color: white;
     color: #000;
 }
 .button {

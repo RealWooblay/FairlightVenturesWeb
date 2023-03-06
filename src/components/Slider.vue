@@ -147,6 +147,7 @@ export default {
   height: 45px;
   cursor: pointer;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 @font-face {
@@ -163,7 +164,7 @@ export default {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  padding-bottom: 330px;
+  padding-bottom: 430px;
 }
 
 .icon-wrapper {
@@ -212,6 +213,7 @@ export default {
   padding-left: 40px;
   padding-right: 40px;
   font-size: 16px;
+  font-weight: bold;
 }
 
 .slider-caption:nth-child(2) {
