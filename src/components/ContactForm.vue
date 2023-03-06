@@ -1,19 +1,31 @@
 <template>
-      <form @submit.prevent="submitForm">
-        <label>
-          Name:
-          <input type="text" v-model="name" />
-        </label>
-        <label>
-          Email:
-          <input type="email" v-model="email" />
-        </label>
-        <label>
-          Message:
-          <textarea v-model="message"></textarea>
-        </label>
-        <button type="submit">Submit</button>
-      </form>
+  <div class="contact">
+      <div class="form">
+          <form @submit.prevent="submitForm">
+            <label>
+              Name:
+              <input type="text" v-model="name" />
+            </label>
+            <label>
+              Email:
+              <input type="email" v-model="email" />
+            </label>
+            <label>
+              Message:
+              <textarea v-model="message"></textarea>
+            </label>
+            <button type="submit">Submit</button>
+          </form>
+      </div>
+      <div class="col">
+          <h1>Contact Information</h1> <br>
+          <h4>Email: <span>thisisaplaceholder@fakeemail.com</span></h4>
+          <br>
+          <h4>Address: <span>123 Tree Ave, Sydney</span></h4>
+          <br>
+          <p>Thank you for contacting us! <br> We will get back to you as soon as possible.</p>
+      </div>
+    </div>
 </template>
 
 <script>
@@ -56,8 +68,15 @@
 
 <style>
 
-.main {
-  height: 550px;
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  padding: 50px;
+}
+
+.form {
+  padding-left: 20px;
 }
 
 label {
@@ -83,6 +102,17 @@ button[type='submit'] {
   padding: 0.5rem 1rem;
   cursor: pointer;
 }
+.col {
+  color: black;
+}
 
+.col h1 {
+  font-weight: bold;
+}
+
+.col span {
+  font-style: italic;
+  font-size: 13px;
+}
 
 </style>
