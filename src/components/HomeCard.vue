@@ -1,7 +1,7 @@
 <template>
     <div class="main">
         <div class="video-bg">
-            <video autoplay muted loop controls="false" playsinline>
+            <video :controls="false" autoplay muted loop playsinline>
                 <source src="../assets/whitetech.mp4" type="video/mp4">
             </video>
         </div>
@@ -19,13 +19,6 @@
 
 <script setup>
 import Button from '../components/Storybook/Button.vue';
-
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    // Get the video element
-    const video = document.querySelector('video');
-    // Hide the controls
-    video.controls = false;
-  }
 </script>
 
 <style scoped>
