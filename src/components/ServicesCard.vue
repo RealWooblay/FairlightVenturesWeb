@@ -1,7 +1,7 @@
 <template>
     <div class="container">
       <div class="video-wrapper">
-        <video autoplay muted loop controls playsinline>
+        <video autoplay muted loop controls="false" playsinline>
           <source src="../assets/RedWorld.mp4" type="video/mp4" />
         </video>
       </div>
