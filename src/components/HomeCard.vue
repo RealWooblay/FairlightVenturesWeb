@@ -19,6 +19,13 @@
 
 <script setup>
 import Button from '../components/Storybook/Button.vue';
+
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    // Get the video element
+    const video = document.querySelector('video');
+    // Hide the controls
+    video.controls = false;
+  }
 </script>
 
 <style scoped>
