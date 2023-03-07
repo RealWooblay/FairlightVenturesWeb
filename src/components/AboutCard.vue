@@ -77,7 +77,7 @@ video {
 
 @media (max-width: 1079px) {
     .text h1, span {
-        font-size: 20px;
+        font-size: 25px;
         text-shadow: 0 0 1px black;
         -webkit-text-stroke: 1px black;
     }
@@ -91,11 +91,21 @@ video {
         padding: 8px;
     }
     .But {
-        bottom: 10%;
+        bottom: 15%;
     }
-
+    video {
+        height: 250px;
+    }
     .main {
-        height: 26vh;
+        height: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .text h1, span {
+        font-size: 15px;
+        text-shadow: 0 0 0.3px black;
+        -webkit-text-stroke: 0.3px black;
     }
 }
 </style>

@@ -35,7 +35,7 @@
 }
 
 .col1 {
-    width: 500px;
+    width: auto;
     padding-top: 30px;
     padding-bottom: 30px;
     font-size: 15px;
@@ -43,7 +43,7 @@
 
 .col2 img {
     width: 400px;
-    position: absolute;
+    position: relative;
     left: 40%;
 }
 
@@ -51,6 +51,43 @@
     color: red;
     font-family: "Bolds";
 }
+
+@media (max-width: 560px) {
+    .col2 img {
+        width: auto;
+        height: 200px;
+        justify-content: center;
+    }
+    .main {
+        padding: 10px;
+        grid-template-rows: auto auto;
+    }
+    .col1 {
+        grid-row: 2;
+    }
+
+    .col1 h2, .col1 span {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1355px) {
+    .col2 img {
+        left: 0%;
+    }
+}
+
+@media (max-width: 850px) {
+    .col2 img {
+        left: 0%;
+        width: 250px;
+    }
+
+    .col1 h2 {
+        font-size: 15px;
+    }
+}
+
 
 @font-face {
   font-family: 'Bolds';

@@ -58,6 +58,15 @@ import Button from './Storybook/Button.vue';
     text-decoration: none;
 }
 
+@media (max-width: 767px) {
+    .r2 h2 {
+        font-size: 20px;
+    }
+    .r1 img {
+        width: 50px;
+    }
+}
+
 @font-face {
   font-family: 'Reg';
   src: url('../assets/fonts/TT_Chocolates_Trial_Light.otf') format('truetype');
@@ -65,7 +74,4 @@ import Button from './Storybook/Button.vue';
   font-weight: lighter;
   font-style: italic;
 }
-
-
-
 </style>

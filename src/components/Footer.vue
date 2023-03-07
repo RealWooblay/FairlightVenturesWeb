@@ -118,4 +118,10 @@
         height: 50px;
     }
 }
+
+@media (max-width: 400px) {
+    .row img {
+        display: none;
+    }
+}
 </style>

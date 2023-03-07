@@ -102,5 +102,11 @@ video {
         height: 26vh;
     }
 }
-
+@media (max-width: 400px) {
+    .text h1, span {
+        font-size: 15px;
+        text-shadow: 0 0 0.3px black;
+        -webkit-text-stroke: 0.3px black;
+    }
+}
 </style>
