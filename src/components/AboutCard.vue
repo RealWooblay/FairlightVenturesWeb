@@ -107,7 +107,14 @@ video {
         font-size: 15px;
         text-shadow: 0 0 0.3px black;
         -webkit-text-stroke: 0.3px black;
-        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+@media (max-width: 767px) {
+    .text h1, span {
+        text-shadow: 0 0 0.3px black;
+        -webkit-text-stroke: 0.3px black;
+        font-family: "Reg";
     }
 }
 </style>

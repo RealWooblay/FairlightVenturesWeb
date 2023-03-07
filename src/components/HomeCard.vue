@@ -104,14 +104,20 @@ video {
 }
 @media (max-width: 400px) {
     .text h1, span {
-        font-family: "Reg";
-        color: black;
         font-size: 15px;
-        text-shadow: 0 0 0px black;
-        -webkit-text-stroke: 0px black;
+        text-shadow: 0 0 0.3px black;
+        -webkit-text-stroke: 0.3px black;
     }
     .main {
         height: 15vh;
+    }
+}
+
+@media (max-width: 767px) {
+    .text h1, span {
+        text-shadow: 0 0 0.3px black;
+        -webkit-text-stroke: 0.3px black;
+        font-family: "Reg";
     }
 }
 </style>
