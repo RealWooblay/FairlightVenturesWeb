@@ -108,5 +108,8 @@ video {
         text-shadow: 0 0 0.3px black;
         -webkit-text-stroke: 0.3px black;
     }
+    .main {
+        height: 15vh;
+    }
 }
 </style>
