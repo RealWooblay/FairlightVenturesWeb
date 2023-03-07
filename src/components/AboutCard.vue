@@ -27,6 +27,7 @@ import Button from '../components/Storybook/Button.vue';
 
 .main {
     height: 50vh;
+    margin-bottom: 200px;
 }
 
 video {
