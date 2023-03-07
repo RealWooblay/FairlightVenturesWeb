@@ -2,7 +2,7 @@
     <div class="main">
         <ServicesCard/>
         <Service 
-        imagePath="../assets/Services/advisory.png" 
+        imagePath="src/assets/services/advisory.png"
         title="Advisory" 
         subText="When it comes to cyber security, business operations, and capital raising, we know our stuff. At Fairlight Ventures, 
                 our technical advisory boards and non-executive directorships provide unparalleled subject matter expertise to companies looking to take their game to the next level. 
