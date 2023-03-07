@@ -21,9 +21,12 @@
           <h1>Contact Information</h1> <br>
           <h4>Email: <span>thisisaplaceholder@fakeemail.com</span></h4>
           <br>
-          <h4>Address: <span>123 Tree Ave, Sydney</span></h4>
+          <h4>Address: <span> 435 Tree Ave, Sydney</span></h4>
           <br>
           <p>Thank you for contacting us! <br> We will get back to you as soon as possible.</p>
+      </div>
+      <div class="col">
+        <img src="../assets/Android-amico.png">
       </div>
     </div>
 </template>
@@ -70,13 +73,14 @@
 
 .contact {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 0.8fr;
   gap: 50px;
   padding: 50px;
 }
 
 .form {
   padding-left: 20px;
+  font-family: "Reg";
 }
 
 label {
@@ -104,6 +108,12 @@ button[type='submit'] {
 }
 .col {
   color: black;
+  font-size: 20px;
+  font-family: "Bolds";
+}
+
+.col img {
+  width: 100%;
 }
 
 .col h1 {
@@ -111,8 +121,8 @@ button[type='submit'] {
 }
 
 .col span {
-  font-style: italic;
-  font-size: 13px;
+  font-family: "Reg";
+  font-size: 18px;
 }
 
 </style>
