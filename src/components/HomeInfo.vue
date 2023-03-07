@@ -115,4 +115,21 @@ import Button from './Storybook/Button.vue';
     }
 }
 
+@media (max-width: 400px) {
+    .info {
+        font-size: 11px;
+    }
+    .info h1 {
+        line-height: 20px;
+    }
+    .info Button {
+    left: 20px;
+    }
+    .info .bwt {
+        font-size: 15px;
+        padding: 15px;
+        box-shadow: none;
+    }
+}
+
 </style>

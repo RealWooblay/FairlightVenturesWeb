@@ -85,5 +85,13 @@
         padding-top: 30px;
     }
 }
-
+@media (max-width: 300px) {
+    .row img {
+        width: 25px;
+    }
+    .main-container h1 {
+        font-size: 10px;
+        padding-top: 30px;
+    }
+}
 </style>
