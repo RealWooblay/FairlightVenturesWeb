@@ -1,7 +1,7 @@
 <template>
     <div class="main">
         <div class="video-bg">
-            <video autoplay muted loop>
+            <video autoplay muted loop controls playsinline>
                 <source src="../assets/City.mp4" type="video/mp4">
             </video>
         </div>
@@ -107,6 +107,7 @@ video {
         font-size: 15px;
         text-shadow: 0 0 0.3px black;
         -webkit-text-stroke: 0.3px black;
+        font-family: Arial, Helvetica, sans-serif;
     }
 }
 </style>

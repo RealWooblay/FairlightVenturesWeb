@@ -1,7 +1,7 @@
 <template>
     <div class="main">
         <div class="video-bg">
-            <video autoplay muted loop>
+            <video autoplay muted loop controls playsinline>
                 <source src="../assets/whitetech.mp4" type="video/mp4">
             </video>
         </div>
@@ -104,6 +104,7 @@ video {
 }
 @media (max-width: 400px) {
     .text h1, span {
+        font-family: Arial, Helvetica, sans-serif;
         font-size: 15px;
         text-shadow: 0 0 0.3px black;
         -webkit-text-stroke: 0.3px black;
