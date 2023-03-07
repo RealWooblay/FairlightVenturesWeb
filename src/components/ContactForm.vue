@@ -19,9 +19,8 @@
       </div>
       <div class="col">
           <h1>Contact Information</h1> <br>
-          <h4>Email: <span>jackaustinc66@gmail.com</span></h4>
           <br>
-          <h4>Address: <span>Sydney</span></h4>
+          <!--<h4>Address: <span>Sydney</span></h4>-->
           <br>
           <p>Thank you for contacting us! <br> We will get back to you as soon as possible.</p> <br>
           <img class=lower src="../assets/Android-amico.png">
