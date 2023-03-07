@@ -123,5 +123,9 @@
     .row img {
         display: none;
     }
+    .row2 a {
+        font-size: 15px;
+        margin-left: 50px;
+    }
 }
 </style>

@@ -23,7 +23,8 @@
           <br>
           <h4>Address: <span> 435 Tree Ave, Sydney</span></h4>
           <br>
-          <p>Thank you for contacting us! <br> We will get back to you as soon as possible.</p>
+          <p>Thank you for contacting us! <br> We will get back to you as soon as possible.</p> <br>
+          <img class=lower src="../assets/Android-amico.png">
       </div>
       <div class="col">
         <img src="../assets/Android-amico.png">
@@ -123,6 +124,36 @@ button[type='submit'] {
 .col span {
   font-family: "Reg";
   font-size: 18px;
+}
+.lower {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .col img {
+    display: none;
+  }
+  .contact {
+    grid-template-columns: 1fr 1fr;
+  }
+  .col, .col span {
+    font-size: 15px;
+  }
+  .form {
+    padding-left: 0px;
+  }
+  .lower {
+    display: contents;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact {
+    gap: 10px;
+  }
+  .col, .col span {
+    font-size: 9px;
+  }
 }
 
 </style>
