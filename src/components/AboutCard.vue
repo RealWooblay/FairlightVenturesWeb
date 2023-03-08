@@ -99,6 +99,7 @@ video {
     }
     .main {
         height: auto;
+        margin-bottom: 100px;
     }
 }
 
@@ -108,6 +109,9 @@ video {
         text-shadow: 0 0 0.3px black;
         -webkit-text-stroke: 0.3px black;
     }
+    .main {
+    margin-bottom: 50px;
+}
 }
 
 @media (max-width: 767px) {
@@ -116,5 +120,8 @@ video {
         -webkit-text-stroke: 0.3px black;
         font-family: "Reg";
     }
+    .main {
+    margin-bottom: 75px;
+}
 }
 </style>

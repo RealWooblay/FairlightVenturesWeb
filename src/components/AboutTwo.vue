@@ -1,20 +1,15 @@
 <template>
     <div class="bg">
         <div class="main">
+            <div class="col1">
+                <h2>Our tailored consulting services help our clients design and execute winning strategies that deliver <span>real results.</span></h2>
+                <br>
+                <h2>Through our thought leadership and dynamic speaking engagements, we inspire and inform the broader community about the latest developments in emerging technologies and beyond.</h2>
+                <br>
+                <h2>We bring our <span>connections, resources, and time</span> to every engagement to help our clients succeed.</h2>
+            </div>
             <div class="col2">
                 <img src="../assets/Robot.png">
-            </div>
-            <div class="col1">
-                <h2>Our tailored consulting services help our clients
-                    design and execute winning strategies 
-                    that deliver <span>real results.</span>
-                    <br>
-                    <br>
-                    Through our thought leadership and dynamic speaking engagements,
-                    we inspire and inform the broader community about the latest developments
-                    in emerging technologies and beyond. </h2>
-                    <br>
-                    <h2>We bring our <span>connections, resources and time</span> to every engagement to help our clients succeed</h2>
             </div>
         </div>
     </div>
@@ -24,9 +19,12 @@
 .bg {
     background-color: white;
 }
+
 .main {
-    display: grid;
-    grid-template-columns: 1fr 1.1fr;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     padding: 40px;
     background: lightgray;
     border-radius: 0%;
@@ -35,16 +33,18 @@
 }
 
 .col1 {
-    width: auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-size: 15px;
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
 }
 
-.col2 img {
-    width: 400px;
-    position: relative;
-    left: 40%;
+.col1 h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: normal;
 }
 
 .col1 span {
@@ -52,42 +52,31 @@
     font-family: "Bolds";
 }
 
-@media (max-width: 560px) {
-    .col2 img {
-        width: auto;
-        height: 200px;
-        justify-content: center;
-    }
-    .main {
-        padding: 10px;
-        grid-template-rows: auto auto;
-    }
-    .col1 {
-        grid-row: 2;
-    }
-
-    .col1 h2, .col1 span {
-        justify-content: center;
-    }
+.col2 {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
 }
 
-@media (max-width: 1355px) {
-    .col2 img {
-        left: 0%;
-    }
+.col2 img {
+    max-width: 100%;
 }
 
 @media (max-width: 850px) {
-    .col2 img {
-        left: 0%;
-        width: 250px;
-    }
-
-    .col1 h2 {
-        font-size: 15px;
+    .col1 {
+        font-size: 18px;
     }
 }
 
+@media (max-width: 560px) {
+    .col1 {
+        font-size: 16px;
+    }
+
+    .col2 {
+        margin-top: 20px;
+    }
+}
 
 @font-face {
   font-family: 'Bolds';
