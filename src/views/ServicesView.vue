@@ -2,7 +2,7 @@
     <div class="main">
         <ServicesCard/>
         <Service 
-        imagePath="src/assets/services/advisory.png"
+        imagePath="/src/assets/services/advisory.png"
         title="Advisory" 
         subText="When it comes to cyber security, business operations, and capital raising, we know our stuff. At Fairlight Ventures, 
                 our technical advisory boards and non-executive directorships provide unparalleled subject matter expertise to companies looking to take their game to the next level. 
@@ -10,7 +10,7 @@
         position="right"/>
         <div class="seperator"></div>
         <Service 
-        imagePath="../assets/Services/Investing.png" 
+        imagePath="/src/assets/services/Investing.png" 
         title="Investment" 
         subText="We back the best and brightest in emerging technologies. We are not just investing capital
          - we are investing our resources, time, and connections to help accelerate growth and solve problems. Our portfolio spans some of the most exciting areas of innovation,
@@ -22,7 +22,7 @@
             </router-link>
         </div>
         <Service 
-        imagePath="../assets/Services/Consulting.png" 
+        imagePath="/src/assets/services/Consulting.png"
         title="Consulting" 
         subText="If you're looking to design and improve your operations, or develop a winning strategy and execute it flawlessly, Fairlight Ventures has your back. 
                 Our team can help you identify areas of improvement, develop a roadmap for success, and provide ongoing support to help you achieve your goals. 
@@ -30,7 +30,7 @@
         position="right"/>
         <div class="seperator"></div>
         <Service 
-        imagePath="../assets/Services/Public_engagement.png" 
+        imagePath="/src/assets/services/Public_engagement.png" 
         title="Public engagements" 
         subText="We are passionate about sharing our expertise and thought leadership with the broader community. Whether it's keynotes, panels, or other speaking engagements, 
                 we're always happy to engage and inspire audiences of all types. From emerging technologies to cyber security and beyond, we bring our A-game to every engagement to 
