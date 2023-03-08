@@ -10,7 +10,7 @@
         position="right"/>
         <div class="seperator"></div>
         <Service 
-        imagePath="/src/assets/services/Investing.png" 
+        imagePath="http://localhost:5173/src/assets/services/Investing.png" 
         title="Investment" 
         subText="We back the best and brightest in emerging technologies. We are not just investing capital
          - we are investing our resources, time, and connections to help accelerate growth and solve problems. Our portfolio spans some of the most exciting areas of innovation,
