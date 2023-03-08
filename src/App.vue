@@ -2,7 +2,6 @@
   <nav>
     <div class="links">
       <div class="logo">
-        <p>Fairlight Ventures</p>
         <img src="./assets/redcardinal.png" alt="Logo">
         <div class="menu-button" :class="{active: isMenuOpen}" @click="toggleMenu">
         <span></span>

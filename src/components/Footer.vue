@@ -17,24 +17,15 @@
             </div>
         </div>
         <div class="row2">
-            <a href="https://instagram.com">
-                <font-awesome-icon icon="fa-brands fa-instagram" />
-            </a>
             <a href="twitter.com">
                 <font-awesome-icon icon="fa-brands fa-twitter" />
-            </a>
-            <a href="facebook.com">
-                <font-awesome-icon icon="fa-brands fa-facebook" />
             </a>
             <a href="linkedin.com">
                 <font-awesome-icon icon="fa-brands fa-linkedin" />
             </a>
-            <a href="spotify.com">
-                <font-awesome-icon icon="fa-solid fa-link" />
-            </a>
         </div>
         <div class="copyright">
-            Copyright © 2023 Jack Coleman. All rights reserved.
+            ©️ 2023 Fairlight Ventures Pty Ld. All rights reserved.
         </div>
         <div class="row">
             <img src="../assets/redcardinal.png">
