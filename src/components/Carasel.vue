@@ -68,6 +68,7 @@
       </div>
     </div>
 
+    <div class="row">
     <!-- Left and right controls -->
     <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -78,6 +79,7 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+</div>
 </div>
   </template>
 
@@ -90,43 +92,11 @@
 .carousel-item h3, .carousel-item p {
   color: #e9eaec;
   font-family: "Reg";
+  padding-bottom: 50px;
 }
 
-.carousel-control-prev,
-    .carousel-control-next {
-    top: auto;
-    bottom: 5%;
-    }
 
-@media (max-width: 1200px) {
-    .carousel-control-prev,
-    .carousel-control-next {
-    top: auto;
-    bottom: -10%;
-    }
-    .carousel-indicators {
-    bottom: -10%;
-    }
-
-    .container {
-    height: 40vh;
-    }
-}    
-
-
-@media (max-width: 767px) {
-    .carousel-control-prev,
-    .carousel-control-next {
-    top: auto;
-    bottom: -10%;
-    }
-
-    .carousel-indicators {
-    bottom: -10%;
-    }
-
-    .container {
-    height: 70vh;
-    }
+.container {
+  margin-bottom: 40px;
 }
 </style>
