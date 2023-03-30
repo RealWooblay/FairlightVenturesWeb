@@ -1,6 +1,6 @@
 <template>
   <div class="contact">
-      <div class="form">
+      <div class="form" ref="col2">
           <form @submit.prevent="submitForm">
             <label>
               Name:
@@ -14,16 +14,15 @@
               Message:
               <textarea v-model="message"></textarea>
             </label>
-            <button type="submit">Submit</button>
+            <div><button type="submit">Submit</button></div>
           </form>
       </div>
-      <div class="col">
+      <div class="col" ref="col">
           <h1>Contact Information</h1> <br>
           <p>Thank you for contacting us! <br> We will get back to you as soon as possible.</p> <br>
-          <img class=lower src="../assets/Android-amico.png">
       </div>
-      <div class="col">
-        <img src="../assets/Android-amico.png">
+      <div class="col" ref="col1">
+        <img src="../assets/Rocket_research-bro.png">
       </div>
     </div>
 </template>
@@ -62,7 +61,30 @@
     this.email = ''
     this.message = ''
   }
-}
+},
+mounted() {
+        const options = {
+            rootMargin: '0px',
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.intersectionRatio > 0) {
+                    entry.target.style.opacity = '1';
+                }
+            });
+        }, options);
+
+        const col = this.$refs.col;
+        observer.observe(col);
+
+        const col1 = this.$refs.col1;
+        observer.observe(col1);
+
+        const col2 = this.$refs.col2;
+        observer.observe(col2);
+    }
 }
 </script>
 
@@ -73,11 +95,14 @@
   grid-template-columns: 1fr 1fr 0.8fr;
   gap: 50px;
   padding: 50px;
+  background-color: #e9eaec;
 }
 
 .form {
   padding-left: 20px;
   font-family: "Reg";
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
 label {
@@ -96,8 +121,9 @@ textarea {
 }
 
 button[type='submit'] {
-  background-color: #007aff;
-  color: white;
+  background-color: rgb(225, 15, 15);
+  color: black;
+  font-family: "Bolds";
   border: none;
   border-radius: 0.25rem;
   padding: 0.5rem 1rem;
@@ -107,6 +133,8 @@ button[type='submit'] {
   color: black;
   font-size: 20px;
   font-family: "Bolds";
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
 .col img {
@@ -114,7 +142,11 @@ button[type='submit'] {
 }
 
 .col h1 {
-  font-weight: bold;
+  font-family: "Bolds";
+}
+
+.col p {
+  font-family: "Reg";
 }
 
 .col span {

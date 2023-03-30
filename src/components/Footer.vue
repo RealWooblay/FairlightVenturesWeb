@@ -1,122 +1,146 @@
 <template>
-    <div class="footer">
-        <div class="row">
-            <div class=info><h3> Fairlight Ventures </h3> 
-            <router-link to="/">
-            <a>Home</a>
-            </router-link>
-            <router-link to="/about">
-            <a>About Us</a>
-            </router-link>
-            <router-link to="/services">
-            <a>Services</a>
-            </router-link>
-            <router-link to="/contact">
-            <a>Contact </a>
-            </router-link>
-            </div>
-        </div>
-        <div class="row2">
-            <a href="twitter.com">
-                <font-awesome-icon icon="fa-brands fa-twitter" />
-            </a>
-            <a href="linkedin.com">
-                <font-awesome-icon icon="fa-brands fa-linkedin" />
-            </a>
-        </div>
-        <div class="copyright">
-            ©️ 2023 Fairlight Ventures Pty Ld. All rights reserved.
-        </div>
-        <div class="row">
-            <img src="../assets/redcardinal.png">
-
-        </div>
-    </div>
-</template>
-
-<style scoped>
-
-.footer {
+    <footer class="footer">
+      <div class="footer__brand" ref="brand">
+        <h3>Fairlight Ventures</h3>
+        <nav class="footer__nav">
+          <router-link to="/" class="footer__link">Home</router-link>
+          <router-link to="/#about" v-scroll-to="'#about'" class="footer__link">About Us</router-link>
+          <router-link to="/#service" v-scroll-to="'#service'" class="footer__link">Services</router-link>
+          <router-link to="/#contact" v-scroll-to="'#contact'" class="footer__link">Contact</router-link>
+        </nav>
+      </div>
+      <div class="footer__social" ref="social">
+        <a href="https://twitter.com">
+          <font-awesome-icon icon="fa-brands fa-twitter" />
+        </a>
+        <a href="https://linkedin.com">
+          <font-awesome-icon icon="fa-brands fa-linkedin" />
+        </a>
+      </div>
+      <div class="footer__copyright">
+        © 2023 Fairlight Ventures Pty Ltd. All rights reserved.
+      </div>
+    </footer>
+  </template>
+  <script>
+  export default {
+    mounted() {
+      const options = {
+        rootMargin: '0px',
+        threshold: 0.5,
+      };
+  
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.intersectionRatio > 0) {
+            entry.target.style.opacity = '1';
+          }
+        });
+      }, options);
+  
+      const brand = this.$refs.brand;
+      observer.observe(brand);
+  
+      const social = this.$refs.social;
+      observer.observe(social);
+    },
+  };
+  </script>
+  <style scoped>
+  .footer {
     display: grid;
-    grid-template-columns: 1fr 2fr 0.5fr;
-    background-color: black;
-    padding-bottom: 20px;
-}
-
-.row {
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #1d1d1d;
+    color: #e9eaec;
+    padding: 40px 60px;
+    text-align: center;
+  }
+  
+  .footer__brand {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.row h3 {
-    padding-top: 30px;
-    padding-bottom: 10px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .footer__brand h3 {
     font-style: italic;
-    font-size: 15px;
-    color: #e9eaec;
-}
-.row a {
-    font-size: 14px;
-    color: #e9eaec;
-    text-decoration: none;
-    display: block;
-}
-
-.row img {
-    width: 100px;
-    height: 100px;
-}
-
-.row2 {
-    margin-top: 70px;
-}
-
-.row2 a {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .footer__nav {
+    display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
+    gap: 15px;
+  }
+  
+  .footer__link {
+    font-size: 1rem;
+    text-decoration: none;
     color: #e9eaec;
-    margin-left: 130px;
-}
-
-.row2 a:hover {
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .footer__link:hover {
     color: red;
-}
-
-.row a:hover {
-    color: red;
-}
-
-.copyright {
+  }
+  
+  .footer__social {
     display: flex;
-    flex-direction: row;
-    position: absolute;
     justify-content: center;
-    bottom: 3px;
-    left: 600px;
-    font-size: 12px;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+.footer__social a {
+    color: #e9eaec;
+    font-size: 25px;
 }
 
-@media (max-width: 1100px) {
-    .copyright {
-        display: none;
-    }
+  .footer__social a:hover {
+    color: red;
+  }
+  
+  .footer__copyright {
+    font-size: 0.8rem;
+    justify-self: end;
+  }
 
-    .row img {
-        width: 50px;
-        height: 50px;
-    }
+  @media (max-width: 768px) {
+  .footer {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto);
+    padding: 30px;
+  }
+  
+  .footer__brand {
+    order: 1;
+  }
+  
+  .footer__nav {
+    order: 3;
+  }
+  
+  .footer__social {
+    order: 2;
+    margin-top: 0;
+  }
+  
+  .footer__social a {
+    font-size: 20px;
+  }
+  .footer__copyright {
+    font-size: 0.8rem;
+    justify-self: end;
+    order: 4;
+  }
 }
-
-@media (max-width: 400px) {
-    .row img {
-        display: none;
-    }
-    .row2 a {
-        font-size: 15px;
-        margin-left: 50px;
-    }
-}
-</style>
+  </style>
+  

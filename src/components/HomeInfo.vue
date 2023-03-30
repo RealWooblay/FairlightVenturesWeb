@@ -1,135 +1,164 @@
 <template>
-    <div class="main-container">
-        <div class="info">
-            <h1>We work with <span>entrepreneurs and innovators</span>
-                <br>
-                to solve the world’s <strong style="font-weight: bold;">most pressing problems.</strong>
-                <br>
-                From the early <span>founder journey,</span>
-                <br>
-                through scaling and capital raising,
-                <br>
-                <strong style="color:red; font-weight:normal; font-family: Bolds;">we have your back. </strong>
-                <br>
-            </h1>
-            <router-link to="/contact" class="But">
-                <Button class="bwt" label="Work with Us" primary :to="{ path: '/contact'}" style="display: inline-block" :class="'storybook-button--new'"/>
-            </router-link>
-        </div>
+<div class="main-container">
+  <div class="info" ref="info">
+    <div class="text">
+      <h1>We work with <span>entrepreneurs and innovators</span>
+        <br>
+        to solve the world’s <strong style="font-weight: bold;">most pressing problems.</strong>
+        <br>
+        From the early <span>founder journey,</span>
+        <br>
+        through scaling and capital raising,
+        <br>
+        <strong style="color:red; font-weight:normal; font-family: Bolds;">we have your back. </strong>
+      </h1>
+      <router-link to="/contact">
+        <Button class="bwt" label="Work with Us" primary :to="{ path: '/contact'}" style="display: inline-block" :class="'storybook-button--secondary'"/>
+      </router-link>
     </div>
+    <div class="image" ref="info">
+      <img src="../assets/Android-amico.png">
+    </div>
+  </div>
+</div>
 </template>
 
-<script setup>
+<script>
 import Button from './Storybook/Button.vue';
+
+export default {
+    components: {
+      Button,
+    },
+    mounted() {
+        const options = {
+            rootMargin: '0px',
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.intersectionRatio > 0) {
+                    entry.target.style.opacity = '1';
+                }
+            });
+        }, options);
+
+        const info = this.$refs.info;
+
+        observer.observe(info);
+    }
+}
 </script>
 
 <style>
-.main-container {
-    background: linear-gradient(135deg, #ffffff, #e8e8e8, #ffffff);
-    color: rgb(51, 51, 51);
-}
 
 .info {
-    font-size: 40px;
-    padding: 50px;
+  opacity: 0;
+  display: flex;
+  flex-wrap: wrap;
+  transition: opacity 1s ease-in-out;
+}
+
+.image {
+  width: 500px;
 }
 
 .info h1 {
-    font-weight: lighter;
-    margin-bottom: 50px;
-    line-height: 80px;
-    font-family: 'Reg';
+  flex-basis: 100%;
+  font-size: 40px;
+  font-weight: lighter;
+  margin: 0;
+  margin-bottom: 50px;
+  line-height: 80px;
+  font-family: 'Reg';
 }
 
 .info span {
-    font-family: 'Bog';
-}
-
-@font-face {
-  font-family: 'Bolds';
-  src: url('../assets/fonts/TT_Chocolates_Trial_DemiBold.otf') format('truetype');
-  /* add additional file formats here */
-  font-weight: lighter;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Reg';
-  src: url('../assets/fonts/TT_Chocolates_Trial_Light.otf') format('truetype');
-  /* add additional file formats here */
-  font-weight: lighter;
-  font-style: italic;
-}
-
-@font-face {
   font-family: 'Bog';
-  src: url('../assets/fonts/Bogart-Light-Italic-trial.ttf') format('truetype');
-  /* add additional file formats here */
-  font-weight: lighter;
-  font-style: italic;
-}
-.info Button {
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    left: 380px;
 }
 
-@media (max-width: 767px) {
-    .info {
-        font-size: 13px;
-    }
-
-    .info h1 {
-        line-height: 54px;
-        margin-bottom: 0px;
-    }
-    .info Button {
-    left: 80px;
-    }
-    .info .bwt {
-        font-size: 10px;
-        padding: 15px;
-        box-shadow: none;
-    }
+.info p {
+  flex-basis: 100%;
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 20px;
+  line-height: 30px;
 }
 
-@media (max-width: 1079px) {
-    .info {
-        font-size: 23px;
-    }
-
-    .info h1 {
-        line-height: 54px;
-        margin-bottom: 0px;
-    }
-    .info Button {
-    left: 80px;
-    }
-    .info .bwt {
-        font-size: 20px;
-        padding: 15px;
-        box-shadow: none;
-    }
+.text {
+  margin-left: 50px;
 }
 
-@media (max-width: 400px) {
-    .info {
-        font-size: 11px;
-    }
-    .info h1 {
-        line-height: 20px;
-    }
-    .info Button {
-    left: 20px;
-    }
-    .info .bwt {
-        font-size: 15px;
-        padding: 15px;
-        box-shadow: none;
-    }
+.info .bwt {
+  margin-top: 20px;
 }
 
+.image img {
+  width: 500px;
+}
+
+.main-container {
+    background: #e9eaec;
+    color: rgb(51, 51, 51);
+    padding-top: 75px;
+}
+
+@media screen and (max-width: 768px) {
+  .info {
+    flex-direction: column;
+  }
+  .text {
+    margin: 0;
+    text-align: center;
+  }
+  .image {
+    margin: 0 auto;
+    max-width: 60%;
+  }
+  .image img {
+    width: 100%;
+    height: auto;
+  }
+  .info h1, .info p, .info span {
+    font-size: 20px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .info {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .text {
+    flex-basis: 50%;
+    margin-left: 40px;
+  }
+  .image {
+    flex-basis: 40%;
+  }
+  .image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .info {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .text {
+    flex-basis: 51%;
+    margin-left: 40px;
+  }
+  .image {
+    flex-basis: 40%;
+  }
+  .image img {
+    width: 100%;
+    height: auto;
+  }
+}
 </style>

@@ -1,8 +1,11 @@
 <template>
+        <div class="slide">
+            <Slider class="SS"/>          
+        </div>
   <nav>
     <div class="links">
       <div class="logo">
-        <img src="./assets/redcardinal.png" alt="Logo">
+        <img src="./assets/Lgo.png" alt="Logo">
         <div class="menu-button" :class="{active: isMenuOpen}" @click="toggleMenu">
         <span></span>
         <span></span>
@@ -11,10 +14,23 @@
     </div>
       <div class="menu" :class="{active: isMenuOpen}">
         <RouterLink active-class="active" to="/" @click="closeMenu">Home</RouterLink>
-        <RouterLink active-class="active" to="/about" @click="closeMenu">About Us</RouterLink>
-        <RouterLink active-class="active" to="/services" @click="closeMenu">Services</RouterLink>
-        <RouterLink active-class="active" to="/contact" @click="closeMenu">Contact</RouterLink>
+        <RouterLink to="/#about" tag="button" v-scroll-to="'#about'">About</RouterLink>
+        <RouterLink to="/#service" tag="button" v-scroll-to="'#service'">Services</RouterLink>
+        <RouterLink to="/#contact" tag="button" v-scroll-to="'#contact'">Contact</RouterLink>
       </div>
+    </div>
+    <div class="main">
+        <div class="text">
+            <h1>Fairlight Ventures</h1> <br>
+            <h2>Empowering innovation, entrepreneurs and driving change,
+              to solve the world's most pressing problems
+                <span> together.</span></h2>
+        </div>
+        <!--<div class="But">
+            <router-link to="/contact">
+                <Button class="button" label="Get in touch" primary :to="{ path: '/contact'}" style="display: inline-block" :class="'storybook-button--primary'"/>
+            </router-link>
+        </div>-->
     </div>
     <RouterView />
   </nav>
@@ -23,10 +39,14 @@
 
 <script>
 import { RouterView, RouterLink } from "vue-router";
+import Button from './components/Storybook/Button.vue';
+import Slider from './components/Slider.vue';
 export default {
   components: {
     RouterView,
     RouterLink,
+    Button,
+    Slider,
   },
   data() {
     return {
@@ -51,7 +71,7 @@ export default {
   font-size: 20px;
   text-decoration: none;
   font-family: "Bolds";
-  color: black;
+  color: #e9eaec;
 }
 
 .links .active {
@@ -63,15 +83,12 @@ export default {
 }
 
 nav {
-  background: linear-gradient(135deg, #ffffff, #e8e8e8, #ffffff);
-  border-left: 1px solid red;
-  border-right: 1px solid red;
+  background: transparent;
 }
 .links {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid red;
   height: 100px; /* add a fixed height to the container to vertically center the items */
   padding-top: 50px;
   padding-bottom: 50px;
@@ -82,8 +99,10 @@ nav {
   margin-left: 25px;
 }
 .logo img {
-  max-width: 50px;
+  max-width: 150px;
   margin-right: 10px;
+  margin-top: -15px;
+  color: white;
 }
 .logo p {
   color: black;
@@ -119,7 +138,7 @@ nav {
     align-items: center;
     width: 100%;
     padding: 20px 0;
-    background: linear-gradient(135deg, #ffffff, #e8e8e8, #ffffff);
+    background: black;
   }
   .menu.active {
     display: flex;
@@ -133,5 +152,88 @@ nav {
   .links a {
     font-size: 14px;
   }
+}
+
+/* HOME CARD */
+
+.main {
+    background: transparent; 
+    height: 70vh; /* set full height of viewport */
+}
+
+.text {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    right: 10%;
+}
+
+.text h1, span {
+    color: #e9eaec;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: "Bolds";
+}
+
+.text h1 {
+    font-family: "Bolds";
+    -webkit-text-stroke: 1px black;
+    text-shadow: 0 0 1px black;
+}
+
+.text h2, span {
+    color: #e9eaec;
+    font-size: 50px;
+    font-weight: bold;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 0 0 1px black;
+    font-family: "Bolds";
+}
+.text span {
+    color: red;
+}
+
+
+.slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.SS {
+  background-color: #e9eaec;
+}
+
+.menu-button {
+  position: fixed;
+  top: 10px; /* adjust as needed */
+  right: 5%; /* adjust as needed */
+}
+
+.menu-button span {
+  background-color: #e9eaec;
+}
+
+@media (max-width: 767px) {
+  .text {
+    top: 1%;
+  }
+}
+
+@media (max-width: 530px) {
+  .text {
+    top: 1%;
+  }
+
+  .text h1 {
+    font-size: 40px;
+}
+
+.text h2, span {
+    font-size: 30px;
+}
 }
 </style>

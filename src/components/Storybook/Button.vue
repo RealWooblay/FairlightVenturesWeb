@@ -103,9 +103,9 @@
 .storybook-button--new {
   color: #000;
   background-color: transparent;
-  border-radius: 40px;
+  border-radius: 0px;
   font-size: 40px;
-  padding: 40px 184px;
+  padding: 40px 144px;
   display: flex;
   justify-content: center;
   align-items: center;

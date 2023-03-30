@@ -30,17 +30,13 @@ export default {
 .main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: white;
+  background-color: #e9eaec;
   width: 100%;
   height: auto;
   color: black;
   padding: 20px;
   box-sizing: border-box;
   border: 1px solid grey;
-}
-
-.main:hover {
-  box-shadow: 5px 5px 5px 10px rgba(255, 0, 0, 0.5);
 }
 
 .col2:hover {

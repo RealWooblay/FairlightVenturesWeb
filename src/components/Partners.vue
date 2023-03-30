@@ -1,14 +1,14 @@
 <template>
     <div class="main-container">
-        <h1>C l i e n t s</h1>
-        <div class="row">
+        <h1 class="header" ref="header">C l i e n t s</h1>
+        <div class="row" ref="row1">
             <img src="../assets/clients/Arqit_BW.jpeg" alt="1">
             <img src="../assets/clients/Bugcrowd_BW.png" alt="2">
             <img src="../assets/clients/DivisionX_BW.png" alt="3">
             <img src="../assets/clients/Heo_BW.png" alt="4">
             <img src="../assets/clients/Livingbridge_BW.jpeg" alt="5">
         </div>
-        <div class="row">
+        <div class="row" ref="row2">
             <img src="../assets/clients/Moxy_BW.png" alt="6">
             <img src="../assets/clients/PRNTR_BW.png" alt="7">
             <img src="../assets/clients/Red_Piranha_BW.png" alt="8">
@@ -17,81 +17,127 @@
         </div>
     </div>
 </template>
+<script>
+export default {
+    mounted() {
+        const options = {
+            rootMargin: '0px',
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.intersectionRatio > 0) {
+                    entry.target.style.opacity = '1';
+                }
+            });
+        }, options);
+
+        const row1 = this.$refs.row1;
+        const row2 = this.$refs.row2;
+        const header = this.$refs.header;
+
+        row1.childNodes.forEach(child => {
+            observer.observe(child);
+        });
+
+        row2.childNodes.forEach(child => {
+            observer.observe(child);
+        });
+
+        observer.observe(header);
+    }
+}
+</script>
 
 <style scoped>
-.main-container {
-    color: rgb(51, 51, 51);
-    position: relative;
-    background: linear-gradient(135deg, #ffffff, #e8e8e8, #ffffff);
-}
-#video-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-.main-container h1 {
-    display: flex;
-    justify-content: center;
-    padding-top: 60px;
-    padding-bottom: 40px;
-    font-size: 42px;
-    font-weight: bold;
-    font-family: "Bog";
-
-}
-.row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 150px;
-    padding-left: 150px;
-    padding-right: 150px;
-    background-color: transparent;
-    color: rgb(112, 112, 112);
-}
-.row img {
-    width: 100px;
-    padding-bottom: 50px;
-}
-
-.row h3 {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
-@font-face {
-  font-family: 'Bog';
-  src: url('../assets/fonts/Bogart-Light-Italic-trial.ttf') format('truetype');
-  /* add additional file formats here */
-  font-weight: lighter;
-  font-style: italic;
-}
-
-@media (max-width: 1100px) {
-    .row img {
-        width: 40px;
+    .main-container {
+        color: rgb(51, 51, 51);
+        position: relative;
+        background: #e9eaec;
     }
+    
+    .main-container h1 {
+        display: flex;
+        justify-content: center;
+        padding-top: 60px;
+        padding-bottom: 40px;
+        font-size: 42px;
+        font-family: "Reg";
+    }
+    
+    .header {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .rows-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
     .row {
-        gap: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
     }
-    .main-container h1 {
-        font-size: 20px;
-        padding-top: 30px;
-    }
-}
-@media (max-width: 300px) {
+    
     .row img {
-        width: 25px;
+        width: 100%;
+        max-width: 160px;
+        padding-bottom: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
     }
-    .main-container h1 {
-        font-size: 10px;
-        padding-top: 30px;
+    
+    /* Media Queries */
+    @media (max-width: 576px) {
+        .main-container h1 {
+            font-size: 20px;
+            padding-top: 20px; 
+        }
+        .row img {
+            max-width: 70px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
     }
-}
+
+    @media (min-width: 576px) {
+        .row img {
+            max-width: 100px;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        .row img {
+            max-width: 100px;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .row {
+            flex-basis: 48%;
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        .row {
+            flex-basis: 31%;
+        }
+    
+        .row img {
+            max-width: 160px;
+        }
+    }
 </style>

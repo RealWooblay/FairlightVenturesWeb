@@ -1,47 +1,77 @@
 <template>
     <div class="main">
-        <div class="r1">
-            <img src="../assets/redcardinal.png">
+        <div class="r1" ref="r1">
+            <img src="../assets/Lgo.png">
         </div>
-        <div class="r2">
+        <div class="r2" ref="r2">
             <h2>At Fairlight Ventures, we want to make a difference, <br>
                 we're not satisfied until we've helped our clients achieve their goals <br>
                 and make a positive impact on the world.</h2>
         </div>
         <div class="r3">
-            <router-link to="/services" class="but">
-                <Button label="Discover Our Services" primary :to="{ path: '/contact'}" :class="'storybook-button--secondary'"/>
+            <router-link to="/#contact" class="but">
+                <Button label="Contact Now" :class="'storybook-button--secondary'"/>
             </router-link>
         </div>
     </div>
 </template>
 
-<script setup>
+<script>
 import Button from './Storybook/Button.vue';
+
+export default {
+    components: {
+        Button,
+    },
+  mounted() {
+        const options = {
+            rootMargin: '0px',
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.intersectionRatio > 0) {
+                    entry.target.style.opacity = '1';
+                }
+            });
+        }, options);
+
+        const r1 = this.$refs.r1;
+        observer.observe(r1);
+
+        const r2 = this.$refs.r2;
+        observer.observe(r2);
+
+    }
+  }
 </script>
 
 <style>
 .main {
     color: black;
-    background: linear-gradient(135deg, #ffffff, #e8e8e8, #ffffff);
+    background-color: #e9eaec;
 }
 
 .r1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
 .r1 img {
     padding-top: 50px;
-    width: 100px;
+    width: 30%;
 }
 
 .r2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
 .r2 h2 {
@@ -52,10 +82,14 @@ import Button from './Storybook/Button.vue';
 
 .r3 {
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .but {
     text-decoration: none;
+    display: inline-block;
 }
 
 @media (max-width: 767px) {
@@ -67,11 +101,4 @@ import Button from './Storybook/Button.vue';
     }
 }
 
-@font-face {
-  font-family: 'Reg';
-  src: url('../assets/fonts/TT_Chocolates_Trial_Light.otf') format('truetype');
-  /* add additional file formats here */
-  font-weight: lighter;
-  font-style: italic;
-}
 </style>
