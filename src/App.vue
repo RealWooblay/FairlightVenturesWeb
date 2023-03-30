@@ -171,11 +171,11 @@ nav {
 .text h1, span {
     color: #e9eaec;
     font-size: 60px;
-    font-family: "Bolds";
+    font-family: "Reg";
 }
 
 .text h1 {
-    font-family: "Bolds";
+    font-family: "Reg";
     -webkit-text-stroke: 1px black;
     text-shadow: 0 0 1px black;
 }
@@ -185,7 +185,7 @@ nav {
     font-size: 50px;
     -webkit-text-stroke: 1px black;
     text-shadow: 0 0 1px black;
-    font-family: "Bolds";
+    font-family: "Reg";
 }
 .text span {
     color: red;
