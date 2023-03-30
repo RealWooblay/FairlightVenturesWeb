@@ -171,7 +171,6 @@ nav {
 .text h1, span {
     color: #e9eaec;
     font-size: 60px;
-    font-weight: bold;
     font-family: "Bolds";
 }
 
@@ -184,7 +183,6 @@ nav {
 .text h2, span {
     color: #e9eaec;
     font-size: 50px;
-    font-weight: bold;
     -webkit-text-stroke: 1px black;
     text-shadow: 0 0 1px black;
     font-family: "Bolds";
