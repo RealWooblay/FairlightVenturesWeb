@@ -12,8 +12,8 @@
         <br>
         <strong style="color:red; font-weight:normal; font-family: Bolds;">we have your back. </strong>
       </h1>
-      <router-link to="/contact">
-        <Button class="bwt" label="Work with Us" primary :to="{ path: '/contact'}" style="display: inline-block" :class="'storybook-button--secondary'"/>
+      <router-link to="/#contact">
+        <Button class="bwt" label="Work with Us" style="display: inline-block" :class="'storybook-button--secondary'"/>
       </router-link>
     </div>
     <div class="image" ref="info">
