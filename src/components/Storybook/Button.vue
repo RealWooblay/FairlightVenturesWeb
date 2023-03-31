@@ -77,9 +77,10 @@
 
 
 .storybook-button--secondary {
-  color: #333;
-  background-color: whitesmoke;
+  color: #e9eaec;
+  background-color: #000;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+  font-family: "Reg";
 }
 
 .storybook-button--secondary:hover {

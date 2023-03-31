@@ -121,9 +121,9 @@ textarea {
 }
 
 button[type='submit'] {
-  background-color: rgb(225, 15, 15);
-  color: black;
-  font-family: "Bolds";
+  background-color: black;
+  color: #e9eaec;
+  font-family: "Reg";
   border: none;
   border-radius: 0.25rem;
   padding: 0.5rem 1rem;

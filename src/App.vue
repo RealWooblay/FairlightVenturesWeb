@@ -22,9 +22,7 @@
     <div class="main">
         <div class="text">
             <h1>Fairlight Ventures</h1> <br>
-            <h2>Empowering innovation, entrepreneurs and driving change,
-              to solve the world's most pressing problems
-                <span> together.</span></h2>
+            <h2>Empowering innovation and driving change - <span>together</span></h2>
         </div>
         <!--<div class="But">
             <router-link to="/contact">

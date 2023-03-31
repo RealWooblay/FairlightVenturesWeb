@@ -12,9 +12,6 @@
 
         <div class="about" id="about">
 
-                <router-link to="/#service" class="but">
-                    <Button label="Discover Our Services" :class="'storybook-button--secondary'"/>
-                </router-link>
             <div class="text5" ref="text5">
                 <h2>
                   Our tailored consulting services help our clients design and execute 
@@ -29,12 +26,15 @@
                   <span>connections, resources, and time</span> 
                   to every engagement to help our clients succeed.
                 </h2>
+
+                
           </div>
+          <router-link to="/#service" class="but">
+                    <Button label="Discover Our Services" :class="'storybook-button--secondary'"/>
+                </router-link>
 
 
           <Slider class="slider1"/>
-
-          <InvestIn/>
 
           <Team/>
 
@@ -47,10 +47,6 @@
         <div class="services" id="service">
 
           <Carousel/>
-
-
-          <About3/>
-
 
           <News/>
 
@@ -74,7 +70,6 @@ import HomeInfo from '../components/HomeInfo.vue';
 import Partners from '../components/Partners.vue';
 
 
-import InvestIn from '../components/InvestIn.vue';
 import AboutTwo from '../components/AboutTwo.vue';
 import Slider from '../components/Slider.vue';
 import Team from '../components/Team.vue';
@@ -82,7 +77,6 @@ import Team from '../components/Team.vue';
 
 import Carousel from '../components/Carasel.vue';
 import Button from '../components/Storybook/Button.vue';
-import About3 from '../components/About3.vue';
 
 
 import News from '../components/News.vue';
@@ -95,14 +89,12 @@ export default {
     HomeInfo,
     Partners,
 
-    InvestIn,
     AboutTwo,
     Slider,
     Team,
 
     Carousel,
     Button,
-    About3,
 
     News,
     ContactForm,
@@ -139,8 +131,6 @@ export default {
 .text5 {
   position: absolute;
   top: 5%;
-  left: 21.8%;
-  right: 5%;
   margin: auto;
   text-align: left;
   transition: opacity 1s ease-in-out;
@@ -165,11 +155,11 @@ export default {
 }
 
 .but {
-  margin-bottom: 20px;
   background: transparent;
   position: absolute;
-  top: 2%;
-  left: 5%;
+  top: 35%;
+  left: 40%;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 768px) {
@@ -197,9 +187,9 @@ export default {
 
 @media only screen and (min-width: 1025px) {
   .text5 {
-    top: 5%;
-    left: 20%;
-    right: 5%;
+    top: 2%;
+    left: 10%;
+    right: 10%;
   }
   .text5 h2, .text5 span {
     font-size: 1.8rem;

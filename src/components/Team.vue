@@ -1,6 +1,6 @@
 <template>
     <div class="Header">
-      <h1>The Team</h1>
+      <h1>Team</h1>
     </div>
     <div class="bod">
       <div class="per" ref="per">
@@ -96,7 +96,7 @@ button {
 
 .Header h1 {
     color: #e9eaec;
-    font-family: "Reg";
+    font-family: "Bolds";
 
 }
 

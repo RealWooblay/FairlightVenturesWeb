@@ -1,6 +1,6 @@
 <template>
     <div class="main-container">
-        <h1 class="header" ref="header">C l i e n t s</h1>
+        <h1 class="header" ref="header">Clients</h1>
         <div class="row" ref="row1">
             <img src="../assets/clients/Arqit_BW.jpeg" alt="1">
             <img src="../assets/clients/Bugcrowd_BW.png" alt="2">
@@ -54,32 +54,21 @@ export default {
     .main-container {
         color: rgb(51, 51, 51);
         position: relative;
-        background: #e9eaec;
+        background: #fff;
     }
     
     .main-container h1 {
         display: flex;
         justify-content: center;
-        padding-top: 60px;
+        padding-top: 10px;
         padding-bottom: 40px;
         font-size: 42px;
-        font-family: "Reg";
+        font-family: "Bolds";
     }
     
     .header {
         opacity: 0;
         transition: opacity 1s ease-in-out;
-    }
-    
-    .rows-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 10px;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-top: 20px;
-        margin-bottom: 20px;
     }
     
     .row {
@@ -88,6 +77,7 @@ export default {
         justify-content: space-between;
         align-items: center;
         gap: 10px;
+        padding-bottom: 40px;
     }
     
     .row img {
