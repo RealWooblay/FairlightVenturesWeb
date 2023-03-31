@@ -14,24 +14,28 @@
 
             <div class="text5" ref="text5">
                 <h2>
-                  Our tailored consulting services help our clients design and execute 
-                  winning strategies that deliver
-                  <span>real results.</span>
-                </h2>
-                <h2>
-                  Through our thought leadership and dynamic speaking engagements, 
-                  we inspire and inform the broader community about the 
-                  latest developments in emerging technologies and beyond.
-                  We bring our 
-                  <span>connections, resources, and time</span> 
-                  to every engagement to help our clients succeed.
+                  We are not just <bold>investing</bold> in ideas - 
+                  we are investing in people who are on a mission to making a difference.
+
+                  Our <bold>tailored advisory and consulting services</bold> help our clients design 
+                  and execute winning strategies that deliver real results. And through 
+                  our thought leadership and dynamic <bold>speaking engagements</bold>, we inspire 
+                  and inform the broader community about the latest developments in 
+                  emerging technologies and beyond.
+
+                  We bring our resources, time, and connections to every engagement to 
+                  <bold>help our clients succeed.</bold>
+
+                  At Fairlight Ventures, we want to make a difference, and we're not 
+                  satisfied until we've helped our clients achieve their goals and 
+                  make a <span>positive impact on the world.</span>
                 </h2>
 
                 
           </div>
           <router-link to="/#service" class="but">
-                    <Button label="Discover Our Services" :class="'storybook-button--secondary'"/>
-                </router-link>
+              <Button label="Discover Our Services" :class="'storybook-button--new'"/>
+          </router-link>
 
 
           <Slider class="slider1"/>
@@ -135,19 +139,22 @@ export default {
   text-align: left;
   transition: opacity 1s ease-in-out;
   opacity: 0;
-  border: 1px solid #ccc;
   background-color: rgba(0, 0, 0, 0.3);
   padding: 10px;
 }
 .text5 span {
-  font-family: "Bog";
+  font-family: "Bolds";
   color: red;
   font-size: 1.9rem;
   text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
+
+.text5 bold {
+  font-family: "Bolds";
+}
   
 .text5 h2 {
-  font-family: "Bolds";
+  font-family: "Reg";
   font-size: 1.9rem;
   margin: 0;
   color: white;
@@ -157,7 +164,7 @@ export default {
 .but {
   background: transparent;
   position: absolute;
-  top: 35%;
+  top: 42%;
   left: 40%;
   text-decoration: none;
 }

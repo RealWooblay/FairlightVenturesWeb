@@ -103,14 +103,14 @@
 
 .storybook-button--new {
   color: #000;
-  background-color: transparent;
-  border-radius: 0px;
-  font-size: 40px;
-  padding: 40px 144px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Bolds";
+  background-color: #e9eaec;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+  font-family: "Reg";
+}
+
+.storybook-button--new:hover {
+  transition: 0.8s;
+  background-color: rgb(255, 85, 85);
 }
 
 @font-face {

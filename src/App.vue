@@ -6,6 +6,7 @@
     <div class="links">
       <div class="logo">
         <img src="./assets/Lgo.png" alt="Logo">
+        <h1>Fairlight Ventures</h1>
         <div class="menu-button" :class="{active: isMenuOpen}" @click="toggleMenu">
         <span></span>
         <span></span>
@@ -21,7 +22,10 @@
     </div>
     <div class="main">
         <div class="text">
-            <h1>Fairlight Ventures</h1> <br>
+            <br>
+            <br>
+            <br>
+            <br>
             <h2>Empowering innovation and driving change - <span>together</span></h2>
         </div>
         <!--<div class="But">
@@ -63,6 +67,11 @@ export default {
 </script>
 
 <style scoped>
+
+.logo h1 {
+  color: #e9eaec;
+  font-family: "Bolds";
+}
 
 .links a {
   margin-right: 40px;

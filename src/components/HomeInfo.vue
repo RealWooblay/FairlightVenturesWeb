@@ -3,14 +3,10 @@
   <div class="info" ref="info">
     <div class="text">
       <h1>We work with <span>entrepreneurs and innovators</span>
-        <br>
-        to solve the world’s <strong style="font-weight: bold;">most pressing problems.</strong>
-        <br>
-        From the early <span>founder journey,</span>
-        <br>
-        through scaling and capital raising,
-        <br>
-        <strong style="color:red; font-weight:normal; font-family: Bolds;">we have your back. </strong>
+        to solve the world’s <span>most pressing problems.</span>
+        From the <span>early founder journey,</span>
+        through <span>scaling</span> and capital raising,
+        <strong>we have your back.</strong>
       </h1>
       <router-link to="/#contact">
         <Button class="bwt" label="WORK WITH US" style="display: inline-block" :class="'storybook-button--secondary'"/>
@@ -61,7 +57,7 @@ export default {
 }
 
 .image {
-  width: 500px;
+  width: 400px;
 }
 
 .info h1 {
@@ -70,7 +66,7 @@ export default {
   font-weight: lighter;
   margin: 0;
   margin-bottom: 50px;
-  line-height: 80px;
+  line-height: 50px;
   font-family: 'Reg';
 }
 
@@ -95,7 +91,16 @@ export default {
 }
 
 .image img {
-  width: 500px;
+  width: 400px;
+}
+
+.text h1 span {
+  font-family: "Bolds";
+}
+
+.text h1 strong {
+  font-family: "Bolds";
+  color: red;
 }
 
 .main-container {
@@ -117,7 +122,7 @@ export default {
     max-width: 60%;
   }
   .image img {
-    width: 100%;
+    width: 80%;
     height: auto;
   }
   .info h1, .info p, .info span {
@@ -139,7 +144,7 @@ export default {
     flex-basis: 40%;
   }
   .image img {
-    width: 100%;
+    width: 80%;
     height: auto;
   }
 }
@@ -157,7 +162,7 @@ export default {
     flex-basis: 40%;
   }
   .image img {
-    width: 100%;
+    width: 80%;
     height: auto;
   }
 }

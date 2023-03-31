@@ -6,9 +6,9 @@
       <div class="per" ref="per">
         <!--<img src="../assets/ef3-placeholder-image.jpeg">-->
         <h3>
-          <span>Suzanne Charlotte</span>
+          <span>Suzanne Charlotte Vos</span>
         </h3>
-        <p1>Sydney | <bold>Founder</bold></p1>
+        <p1><bold>Founder</bold></p1>
         <p>
           {{ summary }}
           <span v-if="showMore">
@@ -24,7 +24,7 @@
         <h3>
           <span>David Plisek</span>
         </h3>
-        <p1>Sydney | <bold>Founder</bold></p1>
+        <p1><bold>Founder</bold></p1>
         <p>
           {{ summary1 }}
           <span v-if="showMore2">
@@ -44,14 +44,14 @@
       return {
         showMore: false,
         summary:
-          "With over a decade of experience, she has helped numerous businesses grow and succeed through her strategic insights and expertise. She is a highly accomplished speaker, who has delivered",
+          "Suzanne Charlotte Vos is a business strategist and speaker with a proven track record of driving innovation and helping businesses achieve their goals.",
         description:
-          " keynote speeches and workshops to audiences across the world, Which have helped businesses enhance all aspects of operations. Committed to building strong relationships with her clients, she takes a hands-on approach to problem-solving, to provide tailored solutions that meet the unique needs of each business. She is dedicated to helping businesses achieve their goals and realize their full potential, bringing a unique perspective to every project, to provide the best possible outcomes.",
+          "Born and raised in the Netherlands, Suzanne began her professional career at her family's manufacturing business, where she gained invaluable experience and eventually guided the sale of the company. After her work in the family business, Suzanne transitioned to the fast-paced world of financial services in Amsterdam and Singapore, bringing her global outlook to the table. She served as the Head of Innovation & Transformation APAC for ING Bank, where she played a key role in setting up the bank's innovation lab in Singapore and internal innovation capability. Suzanne's unique perspective on business operations comes from her extensive experience in the family business and financial services, making her a driving force behind some of the most exciting developments in the industry. She is passionate about helping businesses realize their full potential through tailored solutions that meet their unique needs. With a focus on driving innovation and achieving success in today's rapidly changing business landscape, Suzanne is dedicated to helping businesses stay ahead of the curve and achieve their goals.",
         showMore2: false,
         summary1:
-            "Meet our resident expert in cyber security and emerging technologies. With a wealth of experience in the field, he has a deep understanding of the",
+            "David Plisek is a cybersecurity and technology executive with over a decade of experience driving innovation and delivering value to businesses.",
         description2:
-            "latest threats and vulnerabilities facing businesses today. As a specialist in technology and cyber security, he brings a comprehensive understanding of the latest best practices and tools used to modernise businesses and protect them from cyber attacks, by working closely with clients to identify potential risks and develop tailored strategies to safeguard their data and systems. He is also knowledgable in emerging technologies such as AI and quantum computing, having access to a vast range of resources and connections in these areas, which he can leverage to help businesses stay ahead of the curve in their use of technology."
+            "As Co-Founder of Fairlight Ventures, David brings a wealth of expertise and experience to the table, with a track record of success at notable companies such as NAB, Standard Chartered Bank, and Accenture. With a background in cybersecurity, economics, and investing, David is highly skilled in developing strategies that drive positive change and create value for clients. He has contributed to cybersecurity and diplomatic security efforts during his tenure at the Australian Department of Foreign Affairs and Trade, and is passionate about emerging technologies and the role they play in shaping the future. As Regional Business Development for APAC at Arqit, Co-Founder at DivisionX, and Core Contributor at Saltwater Games, David is at the forefront of some of the most exciting developments in the industry. His dedication to driving innovation and delivering value is second to none, and he is committed to working closely with clients to achieve their goals and make a positive impact on the world."
       };
     },
     mounted() {
