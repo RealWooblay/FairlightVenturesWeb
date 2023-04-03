@@ -52,13 +52,14 @@
 
           <Carousel/>
 
-          <News/>
-
         </div>
 
-        <!-- CONTACT SECTION -->
+                <!-- CONTACT SECTION -->
 
-        <ContactForm id="contact"/>
+          <ContactForm id="contact"/>
+
+          <News/>
+
 
 
 

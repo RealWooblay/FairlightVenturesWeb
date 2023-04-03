@@ -23,7 +23,7 @@
 
     <div class="col" ref="col">
             <div class="card">
-        <img src="https://hbr.org/resources/images/article_assets/2023/03/Mar23_01_1193684948.jpg" class="card-img-top" alt="...">
+        <img src="https://images.pexels.com/photos/6330644/pexels-photo-6330644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top" alt="...">
         <div class="card-body">
             <p class="card-text">Cybersecurity Risks Could Be Inside Your Organization
                 <br> <a href="https://hbr.org/2023/03/your-biggest-cybersecurity-risks-could-be-inside-your-organization">
@@ -90,6 +90,10 @@ export default {
 
 a {
     color: red;
+}
+
+.col img {
+    width: 100%;
 }
 
 

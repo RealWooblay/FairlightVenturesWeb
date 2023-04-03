@@ -1,7 +1,9 @@
 <template>
   <div class="contact">
-      <div class="form" ref="col2">
+      <div v-if="!formSubmitted" class="form" ref="col2">
           <form @submit.prevent="submitForm">
+            <h1>Contact Us</h1>
+            <br>
             <label>
               Name:
               <input type="text" v-model="name" />
@@ -17,16 +19,16 @@
             <div><button type="submit">Submit</button></div>
           </form>
       </div>
-      <div class="col" ref="col">
-          <h1>Contact Information</h1> <br>
-          <p>Thank you for contacting us! <br> We will get back to you as soon as possible.</p> <br>
+      <div v-else class="thank-you-message">
+        <h1>Thank You! <br>
+        <p>Your message has been sent.</p>
+        </h1>
       </div>
       <div class="col" ref="col1">
         <img src="../assets/Rocket_research-bro.png">
       </div>
     </div>
 </template>
-
 <script>
   import emailjs from 'emailjs-com'
 
@@ -36,7 +38,8 @@
       return {
         name: '',
         email: '',
-        message: ''
+        message: '',
+        formSubmitted: false
       }
     },
     methods: {
@@ -50,7 +53,7 @@
     emailjs
       .send('service_2wem0tp', 'template_fnyel2s', templateParams, '3lcPkK4z2zThlOxmI')
       .then(() => {
-        alert('Your message has been sent!')
+        this.formSubmitted = true
       })
       .catch(error => {
         console.error(error)
@@ -76,9 +79,6 @@ mounted() {
             });
         }, options);
 
-        const col = this.$refs.col;
-        observer.observe(col);
-
         const col1 = this.$refs.col1;
         observer.observe(col1);
 
@@ -90,19 +90,36 @@ mounted() {
 
 <style>
 
+.thank-you-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Reg";
+  color: black;
+}
+
+.thank-you-message p {
+  font-size: 20px;
+  font-family: "Reg";
+}
+
 .contact {
   display: grid;
-  grid-template-columns: 1fr 1fr 0.8fr;
-  gap: 50px;
+  grid-template-columns: 1fr 0.8fr;
   padding: 50px;
   background-color: #e9eaec;
 }
 
 .form {
-  padding-left: 20px;
+  padding-left: 300px;
   font-family: "Reg";
   opacity: 0;
   transition: opacity 1s ease-in-out;
+  color: black;
+}
+
+.form h1 {
+  font-family: "Bolds";
 }
 
 label {
@@ -129,30 +146,11 @@ button[type='submit'] {
   padding: 0.5rem 1rem;
   cursor: pointer;
 }
-.col {
-  color: black;
-  font-size: 20px;
-  font-family: "Bolds";
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
 
 .col img {
-  width: 100%;
+  width: 50%;
 }
 
-.col h1 {
-  font-family: "Bolds";
-}
-
-.col p {
-  font-family: "Reg";
-}
-
-.col span {
-  font-family: "Reg";
-  font-size: 18px;
-}
 .lower {
   display: none;
 }
