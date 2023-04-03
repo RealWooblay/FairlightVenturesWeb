@@ -53,6 +53,8 @@
 
           <Carousel/>
 
+          <Services/>
+
         </div>
 
                 <!-- CONTACT SECTION -->
@@ -76,13 +78,13 @@ import HomeInfo from '../components/HomeInfo.vue';
 import Partners from '../components/Partners.vue';
 
 
-import AboutTwo from '../components/AboutTwo.vue';
 import Slider from '../components/Slider.vue';
+import Button from '../components/Storybook/Button.vue';
 import Team from '../components/Team.vue';
 
 
 import Carousel from '../components/Carasel.vue';
-import Button from '../components/Storybook/Button.vue';
+import Services from '../components/Services.vue';
 
 
 import News from '../components/News.vue';
@@ -95,12 +97,12 @@ export default {
     HomeInfo,
     Partners,
 
-    AboutTwo,
     Slider,
+    Button,
     Team,
 
     Carousel,
-    Button,
+    Services,
 
     News,
     ContactForm,

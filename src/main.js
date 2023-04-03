@@ -13,19 +13,12 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
-import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faLink } from '@fortawesome/free-solid-svg-icons'
-import { faMicrochip } from '@fortawesome/free-solid-svg-icons'
-import { faSeedling } from '@fortawesome/free-solid-svg-icons'
-import { faCrown } from '@fortawesome/free-solid-svg-icons'
-import { faNetworkWired } from '@fortawesome/free-solid-svg-icons'
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { faCoins } from '@fortawesome/free-solid-svg-icons'
 
 /* add icons to the library */
-library.add(faInstagram, faLinkedin, faFacebook, faTwitter, faLink, faMicrochip, faSeedling, faCrown, faNetworkWired, faArrowRight)
+library.add(faLinkedin, faTwitter, faCoins)
 
 const app = createApp(App)
 
