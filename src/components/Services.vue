@@ -4,7 +4,7 @@
 
         <div class="row" ref="row1">
             <div class="col">
-                <font-awesome-icon icon="fa-solid fa-rocket"/>
+                <font-awesome-icon icon="fa-solid fa-rocket" class="icon"/>
                 <h2>Advisory</h2>
                 <p>When it comes to cyber security, business operations, and capital 
                     raising, we know our stuff. At Fairlight Ventures, our technical 
@@ -16,7 +16,7 @@
             </div>
 
             <div class="col">
-                <font-awesome-icon icon="fa-solid fa-coins"/>
+                <font-awesome-icon icon="fa-solid fa-coins" class="icon"/>
                 <h2>Investment</h2>
                 <p>We back the best and brightest in emerging technologies. 
                     We are not just investing capital - we are investing our resources, 
@@ -28,9 +28,9 @@
             </div>
         </div>
 
-        <div class="row" ref="row2">
+        <div class="row" ref="row2" >
             <div class="col">
-                <font-awesome-icon icon="fa-solid fa-handshake"/>
+                <font-awesome-icon icon="fa-solid fa-handshake" class="icon"/>
                 <h2>Consulting</h2>
                 <p>If you're looking to design and improve your operations, or develop 
                     a winning strategy and execute it flawlessly, Fairlight Ventures has 
@@ -41,7 +41,7 @@
             </div>
 
             <div class="col">
-                <font-awesome-icon icon="fa-solid fa-microphone"/>
+                <font-awesome-icon icon="fa-solid fa-microphone" class="icon"/>
                 <h2>Speaking</h2>
                 <p>We are passionate about sharing our expertise and thought leadership 
                     with the broader community. Whether it's keynotes, panels, or other 
@@ -84,6 +84,61 @@ export default {
 
 </script>
 
-<style>
+<style scoped>
+
+.main {
+    margin: 75px;
+}
+
+.row {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.col {
+    padding-right: 10px;
+    color: #e9eaec;
+    font-family: "Reg";
+    padding-top: 25px;
+}
+
+.col p {
+    font-size: 20px;
+}
+
+.col h2 {
+    font-weight: bold;
+}
+
+.icon {
+    color: rgb(222, 11, 11);
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+    .col p {
+        font-size: 15px;
+    }
+    .main {
+    margin: 50px;
+}
+}
+
+@media (max-width: 450px) {
+    .col p {
+        font-size: 12px;
+    }
+    .col h2 {
+        font-size: 17px;
+    }
+    .icon {
+        font-size: 25px;
+    }
+    .main {
+    margin: 25px;
+}
+}
+
 
 </style>
