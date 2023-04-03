@@ -71,7 +71,8 @@ export default {
 }
 
 .info span {
-  font-family: 'Bog';
+  font-weight: bold;
+  font-family: "Reg";
 }
 
 .info p {
@@ -166,4 +167,6 @@ export default {
     height: auto;
   }
 }
+
+
 </style>

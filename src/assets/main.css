@@ -1,1 +1,16 @@
 @import './base.css';
+
+@font-face {
+    font-family: 'Reg';
+    src: url('../assets/fonts/TT_Chocolates_Trial_Light.otf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Bolds';
+    src: url('../assets/fonts/TT_Chocolates_Trial_DemiBold.otf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Bog';
+    src: url('../assets/fonts/Bogart-Light-Italic-trial.ttf') format('truetype');
+  }

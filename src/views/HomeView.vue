@@ -51,8 +51,6 @@
 
         <div class="services" id="service">
 
-          <Carousel/>
-
           <Services/>
 
         </div>
@@ -83,7 +81,6 @@ import Button from '../components/Storybook/Button.vue';
 import Team from '../components/Team.vue';
 
 
-import Carousel from '../components/Carasel.vue';
 import Services from '../components/Services.vue';
 
 
@@ -101,7 +98,6 @@ export default {
     Button,
     Team,
 
-    Carousel,
     Services,
 
     News,
