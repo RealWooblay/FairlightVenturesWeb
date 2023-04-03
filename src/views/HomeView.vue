@@ -168,35 +168,36 @@ export default {
 
 @media only screen and (max-width: 768px) {
   .text5 {
-    top: 6%;
+    top: 1%;
     left: 5%;
     right: 5%;
   }
 
   .text5 h2, .text5 span {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
+
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .text5 {
-    top: 6%;
+    top: 1%;
     left: 10%;
     right: 10%;
   }
   .text5 h2, .text5 span {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 }
 
 @media only screen and (min-width: 1025px) {
   .text5 {
-    top: 2%;
+    top: 1%;
     left: 10%;
     right: 10%;
   }
   .text5 h2, .text5 span {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 
 }
