@@ -32,10 +32,11 @@
                 </h2>
 
                 
-          </div>
+                <br>
           <router-link to="/#service" class="but">
               <Button label="Discover Our Services" :class="'storybook-button--new'"/>
           </router-link>
+        </div>
 
 
           <Slider class="slider1"/>
@@ -129,7 +130,7 @@ export default {
 <style scoped>
 
 .slider1 {
-  height: 50vh;
+  height: 60vh;
   z-index: -1;
 }
 
@@ -164,9 +165,6 @@ export default {
 
 .but {
   background: transparent;
-  position: absolute;
-  top: 42%;
-  left: 40%;
   text-decoration: none;
 }
 
@@ -178,7 +176,7 @@ export default {
   }
 
   .text5 h2, .text5 span {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 
@@ -202,5 +200,6 @@ export default {
   .text5 h2, .text5 span {
     font-size: 1.8rem;
   }
+
 }
 </style>

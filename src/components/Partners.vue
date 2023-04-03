@@ -105,19 +105,23 @@ export default {
 
     @media (min-width: 576px) {
         .row img {
-            max-width: 100px;
+            max-width: 120px;
         }
     }
     
     @media (min-width: 768px) {
         .row img {
-            max-width: 100px;
+            max-width: 130px;
         }
     }
     
     @media (min-width: 992px) {
         .row {
             flex-basis: 48%;
+        }
+
+        .row img {
+            max-width: 160px;
         }
     }
     
