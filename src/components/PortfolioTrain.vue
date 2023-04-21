@@ -15,6 +15,8 @@
   <script>
   import { defineComponent } from 'vue';
   import { Carousel, Navigation, Slide } from 'vue3-carousel';
+
+  import Arqit from "@/assets/clients/Arqit.jpeg";
   
   import 'vue3-carousel/dist/carousel.css';
   
@@ -28,16 +30,16 @@
     data() {
       return {
         images: [
-          { url: '../assets/clients/Arqit_BW.jpeg', alt: 'Slide 1' },
-          { url: '../assets/clients/Bugcrowd_BW.png', alt: 'Slide 2' },
-          { url: '../assets/clients/DivisionX_BW.png', alt: 'Slide 3' },
-          { url: '../assets/clients/Heo_BW.png', alt: 'Slide 4' },
-          { url: '../assets/clients/Livingbridge_BW.jpeg', alt: 'Slide 5' },
-          { url: '../assets/clients/Moxy_BW.png', alt: 'Slide 6' },
-          { url: '../assets/clients/PRNTR_BW.png', alt: 'Slide 7' },
-          { url: '../assets/clients/Red_Piranha_BW.png', alt: 'Slide 8' },
-          { url: './assets/clients/SWG.png', alt: 'Slide 9' },
-          { url: '../assets/clients/Winton_BW.png', alt: 'Slide 10' },
+          { url: "https://i.imgur.com/KnkqpmQ.jpg", alt: 'Arqit' },
+          { url: 'https://i.imgur.com/d1PNQLT.png', alt: 'Bugcrowd' },
+          { url: 'https://i.imgur.com/6ddtDhw.png', alt: 'Division X' },
+          { url: 'https://i.imgur.com/gwHjciO.png', alt: 'HE Robotics' },
+          { url: 'https://i.imgur.com/FwKgCaC.jpg', alt: 'Living Bridge' },
+          { url: 'https://i.imgur.com/qyOxHq1.png', alt: 'Moxy' },
+          { url: 'https://i.imgur.com/JE1O1LH.png', alt: 'PRNTR' },
+          { url: 'https://i.imgur.com/GmqRBsl.png', alt: 'Red Pirahna' },
+          { url: 'https://i.imgur.com/6Bk2nnA.png', alt: 'SWG' },
+          { url: 'https://i.imgur.com/J8WBRKf.png', alt: 'Winton' },
         ],
       };
     },
