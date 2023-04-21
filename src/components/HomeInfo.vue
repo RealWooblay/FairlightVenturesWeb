@@ -126,6 +126,7 @@ export default {
   .image img {
     width: 80%;
     height: auto;
+    padding-top: 50px;
   }
   .info h1, .info p, .info span {
     font-size: 20px;

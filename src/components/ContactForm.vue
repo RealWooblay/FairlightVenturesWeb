@@ -88,7 +88,7 @@ mounted() {
 }
 </script>
 
-<style>
+<style scoped>
 
 .thank-you-message {
   display: flex;
@@ -115,7 +115,8 @@ mounted() {
 }
 
 .form {
-  padding-left: 300px;
+  padding-left: 150px;
+  padding-right: 100px;
   font-family: "Reg";
   opacity: 0;
   transition: opacity 1s ease-in-out;
@@ -128,7 +129,6 @@ mounted() {
 
 label {
   display: block;
-  margin-bottom: 0.5rem;
   color: black;
 }
 
@@ -151,20 +151,23 @@ button[type='submit'] {
   cursor: pointer;
 }
 
+.col {
+  padding-left: 50px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
 .col img {
-  width: 50%;
+  width: 100%;
 }
 
 .lower {
   display: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .col img {
     display: none;
-  }
-  .contact {
-    grid-template-columns: 1fr 1fr;
   }
   .col, .col span {
     font-size: 15px;
@@ -175,14 +178,14 @@ button[type='submit'] {
   .lower {
     display: contents;
   }
-}
-
-@media (max-width: 400px) {
-  .contact {
-    gap: 10px;
+  .form {
+  padding-left: 10px;
+  padding-right: 10px;
   }
-  .col, .col span {
-    font-size: 9px;
+
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 
