@@ -15,8 +15,6 @@
   <script>
   import { defineComponent } from 'vue';
   import { Carousel, Navigation, Slide } from 'vue3-carousel';
-
-  import Arqit from "@/assets/clients/Arqit.jpeg";
   
   import 'vue3-carousel/dist/carousel.css';
   
