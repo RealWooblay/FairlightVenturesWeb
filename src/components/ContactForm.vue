@@ -158,7 +158,7 @@ button[type='submit'] {
 }
 
 .col img {
-  width: 100%;
+  width: 90%;
 }
 
 .lower {
