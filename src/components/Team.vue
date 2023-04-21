@@ -17,7 +17,7 @@
           <button v-if="showMore" @click="showMore = false">Show Less ↑</button>
           <button v-else @click="showMore = true">Show More ↓</button>
         </p>
-        <a href="www.youtube.com">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/suzannecharlottevos/">LinkedIn</a>
       </div>
       <div class="per" ref="per1">
         <!--<img src="../assets/ef3-placeholder-image.jpeg">-->
