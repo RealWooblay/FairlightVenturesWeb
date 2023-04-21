@@ -134,7 +134,8 @@
     background-color: #1d1d1d;
     padding: 10px;
     color: #e9eaec;
-    padding-right: 50px;
+    padding: 100px;
+    padding-right: 200px;
 }
 
 .thiscont h1 {
@@ -142,6 +143,10 @@
 }
 
 @media (max-width: 640px) {
+    .thiscont {
+        padding-right: 50px;
+        padding: 10px;
+    }
     .thiscont h1 {
         font-size: 15px;
     }

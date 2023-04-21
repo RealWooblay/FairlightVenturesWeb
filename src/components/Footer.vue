@@ -8,7 +8,7 @@
           <router-link to="/#service" v-scroll-to="'#service'" class="footer__link">Services</router-link>
           <router-link to="/#contact" v-scroll-to="'#contact'" class="footer__link">Contact</router-link>
         </nav>
-        <a class="link" href="/privacy">Privacy Policy</a>
+        <router-link to="/privacy" class="footer__link">Privacy Policy</router-link>
       </div>
       <div class="footer__social" ref="social">
         <a href="https://twitter.com">
