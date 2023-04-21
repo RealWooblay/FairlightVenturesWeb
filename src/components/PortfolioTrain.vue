@@ -28,16 +28,16 @@
     data() {
       return {
         images: [
-          { url: 'src/assets/clients/Arqit_BW.jpeg', alt: 'Slide 1' },
-          { url: 'src/assets/clients/Bugcrowd_BW.png', alt: 'Slide 2' },
-          { url: 'src/assets/clients/DivisionX_BW.png', alt: 'Slide 3' },
-          { url: 'src/assets/clients/Heo_BW.png', alt: 'Slide 4' },
-          { url: 'src/assets/clients/Livingbridge_BW.jpeg', alt: 'Slide 5' },
-          { url: 'src/assets/clients/Moxy_BW.png', alt: 'Slide 6' },
-          { url: 'src/assets/clients/PRNTR_BW.png', alt: 'Slide 7' },
-          { url: 'src/assets/clients/Red_Piranha_BW.png', alt: 'Slide 8' },
-          { url: 'src/assets/clients/SWG.png', alt: 'Slide 9' },
-          { url: 'src/assets/clients/Winton_BW.png', alt: 'Slide 10' },
+          { url: '../assets/clients/Arqit_BW.jpeg', alt: 'Slide 1' },
+          { url: '../assets/clients/Bugcrowd_BW.png', alt: 'Slide 2' },
+          { url: '../assets/clients/DivisionX_BW.png', alt: 'Slide 3' },
+          { url: '../assets/clients/Heo_BW.png', alt: 'Slide 4' },
+          { url: '../assets/clients/Livingbridge_BW.jpeg', alt: 'Slide 5' },
+          { url: '../assets/clients/Moxy_BW.png', alt: 'Slide 6' },
+          { url: '../assets/clients/PRNTR_BW.png', alt: 'Slide 7' },
+          { url: '../assets/clients/Red_Piranha_BW.png', alt: 'Slide 8' },
+          { url: './assets/clients/SWG.png', alt: 'Slide 9' },
+          { url: '../assets/clients/Winton_BW.png', alt: 'Slide 10' },
         ],
       };
     },
