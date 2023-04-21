@@ -83,7 +83,7 @@ button {
   padding-right: 20px; /* add space for the arrow */
   background: transparent;
   border: 0px;
-  color: red;
+  color: #DB162F;
   font-size: 17px;
   font-family: "Bolds";
 }

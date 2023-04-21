@@ -1,12 +1,11 @@
 <template>
-        <div class="slide">
+        <div class="slide" id="home">
             <Slider class="SS"/>          
         </div>
   <nav>
     <div class="links">
       <div class="logo">
         <img src="./assets/Lgo.png" alt="Logo">
-        <h1>Fairlight Ventures</h1>
         <div class="menu-button" :class="{active: isMenuOpen}" @click="toggleMenu">
         <span></span>
         <span></span>
@@ -14,7 +13,7 @@
       </div>
     </div>
       <div class="menu" :class="{active: isMenuOpen}">
-        <RouterLink active-class="active" to="/" @click="closeMenu">Home</RouterLink>
+        <RouterLink to="/#home" tag="button" v-scroll-to="'#home'">Home</RouterLink>
         <RouterLink to="/#about" tag="button" v-scroll-to="'#about'">About</RouterLink>
         <RouterLink to="/#service" tag="button" v-scroll-to="'#service'">Services</RouterLink>
         <RouterLink to="/#contact" tag="button" v-scroll-to="'#contact'">Contact</RouterLink>
@@ -26,7 +25,7 @@
             <br>
             <br>
             <br>
-            <h2>Empowering innovation and driving change - <span>together</span></h2>
+            <h2>Empowering innovation and driving change, <span>together</span></h2>
         </div>
         <!--<div class="But">
             <router-link to="/contact">
@@ -68,20 +67,29 @@ export default {
 
 <style scoped>
 
+.links {
+  background-color: rgb(0, 0, 0, 0.3);
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+}
+
 .logo h1 {
   color: #e9eaec;
   font-family: "Bolds";
 }
 
 .links a {
-  margin-right: 40px;
+  padding-right: 40px;
   font-size: 20px;
   text-decoration: none;
   font-family: "Bolds";
   color: #e9eaec;
 }
 
-.links .active {
+
+
+.links a:active {
   color: red;
 }
 
@@ -103,11 +111,11 @@ nav {
 .logo {
   display: flex;
   align-items: center;
-  margin-left: 25px;
+  padding-left: 25px;
 }
 .logo img {
   max-width: 150px;
-  margin-right: 10px;
+  padding-right: 10px;
   margin-top: -15px;
   color: white;
 }
@@ -119,6 +127,7 @@ nav {
 .menu-button {
   display: none;
   cursor: pointer;
+  margin-top: 20px;
 }
 .menu-button span {
   display: block;
@@ -152,7 +161,7 @@ nav {
   }
   .links a {
     font-size: 20px;
-    margin: 10px 0;
+    padding: 10px 0;
   }
 }
 @media (max-width: 500px) {
@@ -170,7 +179,7 @@ nav {
 
 .text {
     position: absolute;
-    top: 5%;
+    top: 25%;
     left: 5%;
     right: 10%;
 }
@@ -222,13 +231,13 @@ nav {
 
 @media (max-width: 767px) {
   .text {
-    top: 1%;
+    top: 10%;
   }
 }
 
 @media (max-width: 530px) {
   .text {
-    top: 1%;
+    top: 10%;
   }
 
   .text h1 {

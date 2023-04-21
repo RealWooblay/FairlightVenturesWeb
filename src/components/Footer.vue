@@ -8,6 +8,7 @@
           <router-link to="/#service" v-scroll-to="'#service'" class="footer__link">Services</router-link>
           <router-link to="/#contact" v-scroll-to="'#contact'" class="footer__link">Contact</router-link>
         </nav>
+        <a class="link" href="">Privacy Policy</a>
       </div>
       <div class="footer__social" ref="social">
         <a href="https://twitter.com">
@@ -17,10 +18,8 @@
           <font-awesome-icon icon="fa-brands fa-linkedin" />
         </a>
       </div>
-      <div class="footer__copyright">
-        © 2023 Fairlight Ventures Pty Ltd. All rights reserved.
-      </div>
     </footer>
+    <div class="copyright"><p>© 2023 Fairlight Ventures Pty Ltd. All rights reserved.</p></div>
   </template>
   <script>
   export default {
@@ -47,9 +46,23 @@
   };
   </script>
   <style scoped>
+
+  a {
+    color: white;
+  }
+
+  .copyright {
+    background-color: #1d1d1d;
+    padding-bottom: 5px;
+  }
+  .copyright p {
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
   .footer {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr;
     background-color: #1d1d1d;
     color: #e9eaec;
     padding: 40px 60px;
@@ -69,6 +82,16 @@
     font-style: italic;
     font-size: 1.2rem;
     margin-bottom: 15px;
+  }
+
+.link {
+    color: white;
+    padding-top: 5px;
+    text-decoration: none;
+  }
+
+  .link:hover {
+    color: red;
   }
   
   .footer__nav {
@@ -107,40 +130,54 @@
   .footer__social a:hover {
     color: red;
   }
-  
-  .footer__copyright {
-    font-size: 0.8rem;
-    justify-self: end;
-  }
 
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 600px) {
   .footer {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, auto);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .footer__brand {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .footer__nav {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .footer__social {
+    margin-top: 20px;
+  }
+}
+
+/* Medium devices (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .footer {
+    grid-template-columns: 1fr;
     padding: 30px;
   }
   
   .footer__brand {
-    order: 1;
+    margin-bottom: 30px;
+    text-align: center;
   }
   
   .footer__nav {
-    order: 3;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
   }
   
   .footer__social {
-    order: 2;
-    margin-top: 0;
-  }
-  
-  .footer__social a {
-    font-size: 20px;
-  }
-  .footer__copyright {
-    font-size: 0.8rem;
-    justify-self: end;
-    order: 4;
+    margin-top: 30px;
   }
 }
+
   </style>
   

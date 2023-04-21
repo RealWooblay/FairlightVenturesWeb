@@ -1,6 +1,10 @@
 <template>
     <div class="main">
 
+        <div class="Header" ref="header">
+            <h1>What we do</h1>
+        </div>
+
 
         <div class="row" ref="row1">
             <div class="col">
@@ -79,6 +83,9 @@ export default {
 
         const row2 = this.$refs.row2;
         observer.observe(row2);
+
+        const header = this.$refs.header;
+        observer.observe(header);
     }
   }
 
@@ -88,6 +95,18 @@ export default {
 
 .main {
     margin: 75px;
+}
+
+.Header {
+    display: flex;
+    justify-content: center;
+    color: #e9eaec;
+    margin-bottom: 25px;
+}
+
+.Header {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
 .row {

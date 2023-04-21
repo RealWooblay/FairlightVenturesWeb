@@ -2,7 +2,7 @@
 <div class="main-container">
   <div class="info" ref="info">
     <div class="text">
-      <h1>We work with <span>entrepreneurs and innovators</span>
+      <h1>We help <span>entrepreneurs and innovators</span>
         to solve the world’s <span>most pressing problems.</span>
         From the <span>early founder journey,</span>
         through <span>scaling</span> and capital raising,
@@ -108,6 +108,7 @@ export default {
     background: #e9eaec;
     color: rgb(51, 51, 51);
     padding-top: 75px;
+    padding-bottom: 50px;
 }
 
 @media screen and (max-width: 768px) {

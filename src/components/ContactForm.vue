@@ -110,6 +110,10 @@ mounted() {
   background-color: #e9eaec;
 }
 
+.contact h1 {
+  color: rgb(51, 51, 51);
+}
+
 .form {
   padding-left: 300px;
   font-family: "Reg";
