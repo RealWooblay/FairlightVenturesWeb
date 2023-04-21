@@ -1,5 +1,6 @@
 <template>
 <div class="traincont">
+  <div class="Training" ref="Training">
     <h1>Portfolio & Clients</h1>
     <Carousel :items-to-show="2.5" :wrap-around="true" :transition="5000" :autoplay="true" :touchDrag="true" :mouseDrag="true">
       <Slide v-for="(image, index) in images" :key="index">
@@ -9,6 +10,7 @@
         <Navigation />
       </template>
     </Carousel>
+  </div>
 </div>
   </template>
   
@@ -41,6 +43,23 @@
         ],
       };
     },
+    mounted() {
+        const options = {
+            rootMargin: '0px',
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.intersectionRatio > 0) {
+                    entry.target.style.opacity = '1';
+                }
+            });
+        }, options);
+
+        const Training = this.$refs.Training;
+        observer.observe(Training);
+    }
   });
   </script>
 
@@ -50,6 +69,11 @@
     background-color: white;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+.Training {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
 .traincont h1 {

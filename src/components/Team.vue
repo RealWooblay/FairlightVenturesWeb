@@ -1,5 +1,5 @@
 <template>
-    <div class="Header">
+    <div class="Header" ref="Header">
       <h1>Team</h1>
     </div>
     <div class="bod">
@@ -73,6 +73,9 @@
   
       const per1 = this.$refs.per1;
       observer.observe(per1);
+
+      const Header = this.$refs.Header;
+      observer.observe(Header);
     }
   };
   </script>
@@ -92,6 +95,8 @@ button {
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
 .Header h1 {

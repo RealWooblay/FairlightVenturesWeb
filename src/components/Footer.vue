@@ -8,7 +8,7 @@
           <router-link to="/#service" v-scroll-to="'#service'" class="footer__link">Services</router-link>
           <router-link to="/#contact" v-scroll-to="'#contact'" class="footer__link">Contact</router-link>
         </nav>
-        <router-link to="/privacy" class="footer__link">Privacy Policy</router-link>
+        <router-link to="/privacy" class="footer__link" @click.prevent="scrollToTop">Privacy Policy</router-link>
       </div>
       <div class="footer__social" ref="social">
         <a href="https://twitter.com">
@@ -43,6 +43,11 @@
       const social = this.$refs.social;
       observer.observe(social);
     },
+    methods: {
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+}
   };
   </script>
   <style scoped>
