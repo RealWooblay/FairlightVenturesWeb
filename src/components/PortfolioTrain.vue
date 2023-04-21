@@ -7,16 +7,15 @@
         <img :src="image.url" :alt="image.alt" />
       </Slide>
       <template #addons>
-        <Navigation />
       </template>
     </Carousel>
   </div>
 </div>
   </template>
   
-  <script>
+<script>
   import { defineComponent } from 'vue';
-  import { Carousel, Navigation, Slide } from 'vue3-carousel';
+  import { Carousel, Slide } from 'vue3-carousel';
   
   import 'vue3-carousel/dist/carousel.css';
   
@@ -25,7 +24,6 @@
     components: {
       Carousel,
       Slide,
-      Navigation,
     },
     data() {
       return {
