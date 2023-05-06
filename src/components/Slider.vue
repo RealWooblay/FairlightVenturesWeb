@@ -10,9 +10,9 @@ export default {
   data() {
     return {
       images: [
-      'https://images.pexels.com/photos/3602154/pexels-photo-3602154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-        'https://images.pexels.com/photos/633409/pexels-photo-633409.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-        'https://images.pexels.com/photos/952670/pexels-photo-952670.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        'https://i.imgur.com/2wPCmfw.jpg',
+        'https://i.imgur.com/Y9zu8TH.jpg',
+        'https://i.imgur.com/0FMgyZM.png',
         // add image URLs here
       ],
       currentIndex: 0,
@@ -77,6 +77,4 @@ export default {
 .slideshow-image:first-child {
   opacity: 1;
 }
-
-
 </style>

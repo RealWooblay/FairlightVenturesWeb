@@ -1,18 +1,18 @@
 <template>
-        <div class="slide" id="home">
-            <Slider class="SS"/>          
-        </div>
+  <div class="slide" id="home">
+    <Slider class="SS" />
+  </div>
   <nav>
     <div class="links">
       <div class="logo">
         <img src="./assets/Lgo.png" alt="Logo">
-        <div class="menu-button" :class="{active: isMenuOpen}" @click="toggleMenu">
-        <span></span>
-        <span></span>
-        <span></span>
+        <div class="menu-button" :class="{ active: isMenuOpen }" @click="toggleMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
-    </div>
-      <div class="menu" :class="{active: isMenuOpen}">
+      <div class="menu" :class="{ active: isMenuOpen }">
         <RouterLink to="/#home" tag="button" v-scroll-to="'#home'">Home</RouterLink>
         <RouterLink to="/#about" tag="button" v-scroll-to="'#about'">About</RouterLink>
         <RouterLink to="/#service" tag="button" v-scroll-to="'#service'">Services</RouterLink>
@@ -20,14 +20,14 @@
       </div>
     </div>
     <div class="main">
-        <div class="text">
-            <br>
-            <br>
-            <br>
-            <br>
-            <h2>Empowering innovation and driving change, <span>together</span></h2>
-        </div>
-        <!--<div class="But">
+      <div class="text">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2>Empowering innovation and driving change, <span>together</span></h2>
+      </div>
+      <!--<div class="But">
             <router-link to="/contact">
                 <Button class="button" label="Get in touch" primary :to="{ path: '/contact'}" style="display: inline-block" :class="'storybook-button--primary'"/>
             </router-link>
@@ -35,7 +35,6 @@
     </div>
     <RouterView />
   </nav>
-
 </template>
 
 <script>
@@ -66,7 +65,6 @@ export default {
 </script>
 
 <style scoped>
-
 .links {
   background-color: rgb(0, 0, 0, 0.3);
   z-index: 2;
@@ -100,35 +98,43 @@ export default {
 nav {
   background: transparent;
 }
+
 .links {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px; /* add a fixed height to the container to vertically center the items */
+  height: 100px;
+  /* add a fixed height to the container to vertically center the items */
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
 .logo {
   display: flex;
   align-items: center;
   padding-left: 25px;
 }
+
 .logo img {
-  max-width: 150px;
+  max-width: 100px;
+  padding-top: 10px;
   padding-right: 10px;
   margin-top: -15px;
   color: white;
 }
+
 .logo p {
   color: black;
   font-size: 14px;
   font-family: "Bolds";
 }
+
 .menu-button {
   display: none;
   cursor: pointer;
   margin-top: 20px;
 }
+
 .menu-button span {
   display: block;
   height: 2px;
@@ -136,11 +142,13 @@ nav {
   background: black;
   margin-bottom: 5px;
 }
+
 @media (max-width: 768px) {
   .menu-button {
     display: block;
     margin-left: auto;
   }
+
   .links {
     flex-direction: column;
     align-items: flex-start;
@@ -148,6 +156,7 @@ nav {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+
   .menu {
     display: none;
     flex-direction: column;
@@ -156,14 +165,17 @@ nav {
     padding: 20px 0;
     background: black;
   }
+
   .menu.active {
     display: flex;
   }
+
   .links a {
     font-size: 20px;
     padding: 10px 0;
   }
 }
+
 @media (max-width: 500px) {
   .links a {
     font-size: 14px;
@@ -173,36 +185,40 @@ nav {
 /* HOME CARD */
 
 .main {
-    background: transparent; 
-    height: 70vh; /* set full height of viewport */
+  background: transparent;
+  height: 70vh;
+  /* set full height of viewport */
 }
 
 .text {
-    position: absolute;
-    top: 25%;
-    left: 5%;
-    right: 10%;
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  right: 10%;
 }
 
-.text h1, span {
-    color: #e9eaec;
-    font-size: 60px;
-    font-family: "Bolds";
+.text h1,
+span {
+  color: #e9eaec;
+  font-size: 60px;
+  font-family: "Bolds";
 }
 
 .text h1 {
-    font-family: "Bolds";
-    text-shadow: 0 0 1px black;
+  font-family: "Bolds";
+  text-shadow: 0 0 1px black;
 }
 
-.text h2, span {
-    color: #e9eaec;
-    font-size: 50px;
-    text-shadow: 0 0 1px black;
-    font-family: "Bolds";
+.text h2,
+span {
+  color: #e9eaec;
+  font-size: 50px;
+  text-shadow: 0 0 1px black;
+  font-family: "Bolds";
 }
+
 .text span {
-    color: red;
+  color: red;
 }
 
 
@@ -221,8 +237,10 @@ nav {
 
 .menu-button {
   position: fixed;
-  top: 10px; /* adjust as needed */
-  right: 5%; /* adjust as needed */
+  top: 10px;
+  /* adjust as needed */
+  right: 5%;
+  /* adjust as needed */
 }
 
 .menu-button span {
@@ -242,10 +260,11 @@ nav {
 
   .text h1 {
     font-size: 40px;
-}
+  }
 
-.text h2, span {
+  .text h2,
+  span {
     font-size: 30px;
-}
+  }
 }
 </style>

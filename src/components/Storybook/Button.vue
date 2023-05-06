@@ -1,57 +1,57 @@
 <template>
-    <button type="button" :class="classes" @click="onClick" :style="style">{{ label }}</button>
-  </template>
+  <button type="button" :class="classes" @click="onClick" :style="style">{{ label }}</button>
+</template>
   
-  <script>
-  import { reactive, computed } from 'vue';
-  
-  export default {
-    name: 'my-button',
-  
-    props: {
-      label: {
-        type: String,
-        required: true,
-      },
-      primary: {
-        type: Boolean,
-        default: false,
-      },
-      size: {
-        type: String,
-        validator: function (value) {
-          return ['small', 'medium', 'large'].indexOf(value) !== -1;
-        },
-      },
-      backgroundColor: {
-        type: String,
-      },
-      textdecoration: {
-        type: String,
+<script>
+import { reactive, computed } from 'vue';
+
+export default {
+  name: 'my-button',
+
+  props: {
+    label: {
+      type: String,
+      required: true,
+    },
+    primary: {
+      type: Boolean,
+      default: false,
+    },
+    size: {
+      type: String,
+      validator: function (value) {
+        return ['small', 'medium', 'large'].indexOf(value) !== -1;
       },
     },
-  
-    emits: ['click'],
-  
-    setup(props, { emit }) {
-      props = reactive(props);
-      return {
-        classes: computed(() => ({
-          'storybook-button': true,
-          'storybook-button--primary': props.primary,
-          [`storybook-button--${props.size || 'primary'}`]: true,
-        })),
-        style: computed(() => ({
-          backgroundColor: props.backgroundColor,
-          margin: 'auto'
-        })),
-        onClick() {
-          emit('click');
-        }
+    backgroundColor: {
+      type: String,
+    },
+    textdecoration: {
+      type: String,
+    },
+  },
+
+  emits: ['click'],
+
+  setup(props, { emit }) {
+    props = reactive(props);
+    return {
+      classes: computed(() => ({
+        'storybook-button': true,
+        'storybook-button--primary': props.primary,
+        [`storybook-button--${props.size || 'primary'}`]: true,
+      })),
+      style: computed(() => ({
+        backgroundColor: props.backgroundColor,
+        margin: 'auto'
+      })),
+      onClick() {
+        emit('click');
       }
-    },
-  };
-  </script>
+    }
+  },
+};
+</script>
   
 <style scoped>
 .storybook-button {
@@ -63,7 +63,9 @@
   display: inline-block;
   line-height: 1;
 }
-.storybook-button--primary { /* In use */
+
+.storybook-button--primary {
+  /* In use */
   color: black;
   background-color: white;
   border: 1px solid black;
@@ -77,25 +79,27 @@
 
 
 .storybook-button--secondary {
-  color: #e9eaec;
-  background-color: #000;
+  color: #223D6A;
+  background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
   font-family: "Reg";
 }
 
 .storybook-button--secondary:hover {
   transition: 0.8s;
-  background-color: rgb(255, 85, 85);
+  background-color: #62A5AA;
 }
 
 .storybook-button--small {
   font-size: 12px;
   padding: 10px 16px;
 }
+
 .storybook-button--medium {
   font-size: 14px;
   padding: 11px 20px;
 }
+
 .storybook-button--large {
   font-size: 16px;
   padding: 12px 24px;
