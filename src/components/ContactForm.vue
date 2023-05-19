@@ -121,7 +121,7 @@ export default {
 }
 
 .form {
-  padding-left: 150px;
+  padding-left: 65px;
   padding-right: 100px;
   font-family: "Reg";
   opacity: 0;
@@ -161,10 +161,6 @@ button[type='submit'] {
   width: 90%;
 }
 
-.lower {
-  display: none;
-}
-
 @media (max-width: 950px) {
 
   .col,
@@ -174,10 +170,6 @@ button[type='submit'] {
 
   .form {
     padding-left: 0px;
-  }
-
-  .lower {
-    display: contents;
   }
 
   .form {

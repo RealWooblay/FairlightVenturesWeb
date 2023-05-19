@@ -110,19 +110,27 @@ export default {
   padding-bottom: 50px;
 }
 
+@media screen and (min-width: 768px) {
+  .main-container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .info {
     flex-direction: column;
   }
 
   .text {
-    margin: 0;
+    margin: 20px;
     text-align: center;
   }
 
   .image {
     margin: 0 auto;
     max-width: 60%;
+
   }
 
   .image img {

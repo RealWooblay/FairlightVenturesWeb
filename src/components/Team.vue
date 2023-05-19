@@ -1,6 +1,6 @@
 <template>
-  <div class="Header" ref="Header">
-    <h1>Who we are</h1>
+  <div class="Header">
+    <h1 class="ish" ref="ish">Who we are</h1>
   </div>
   <div class="bod">
     <div class="per" ref="per">
@@ -14,7 +14,7 @@
       <p>
         {{ summary }}
         <span v-if="showMore">
-          <span style="font-size: 20px; color: #e9eaec">{{ description }}</span>
+          <span style="font-size: 20px; color: black">{{ description }}</span>
         </span>
         <button v-if="showMore" @click="showMore = false">Show Less ↑</button>
         <button v-else @click="showMore = true">Show More ↓</button>
@@ -32,7 +32,7 @@
       <p>
         {{ summary1 }}
         <span v-if="showMore2">
-          <span style="font-size: 20px; color: #e9eaec">{{ description2 }}</span>
+          <span style="font-size: 20px; color: black">{{ description2 }}</span>
         </span>
         <button v-if="showMore2" @click="showMore2 = false">Show Less ↑</button>
         <button v-else @click="showMore2 = true">Show More ↓</button>
@@ -78,8 +78,8 @@ export default {
     const per1 = this.$refs.per1;
     observer.observe(per1);
 
-    const Header = this.$refs.Header;
-    observer.observe(Header);
+    const ish = this.$refs.ish;
+    observer.observe(ish);
   }
 };
 </script>
@@ -100,10 +100,13 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 150px;
+  background-color: white;
+}
+
+.ish {
   opacity: 0;
   transition: opacity 1s ease-in-out;
-  background-color: white;
 }
 
 .Header h1 {
@@ -123,14 +126,21 @@ button {
 
 .per {
   text-align: center;
-  margin: 30px;
+  padding: 30px;
   opacity: 0;
   transition: opacity 1s ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+  .per {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 
 }
 
 .per img {
-  width: 40%;
+  width: 50%;
   padding-bottom: 20px;
 }
 
@@ -163,7 +173,6 @@ button {
   /* Styles for mobile devices */
   .bod {
     grid-template-columns: 1fr;
-    grid-gap: 30px;
   }
 
 
@@ -174,7 +183,7 @@ button {
   .per a {
     display: block;
     text-align: center;
-    margin-top: 20px;
+    padding-top: 20px;
   }
 }
 
@@ -183,7 +192,6 @@ button {
   /* Styles for tablets */
   .bod {
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
   }
 
   .per p {
@@ -202,7 +210,6 @@ button {
   /* Styles for desktops */
   .bod {
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px;
   }
 
   .per p {
@@ -211,7 +218,11 @@ button {
 
   .per a {
     display: inline;
-    margin-left: 10px;
+    padding-left: 10px;
+  }
+
+  .per {
+    padding-bottom: 100px;
   }
 }
 </style>

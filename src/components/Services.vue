@@ -136,13 +136,30 @@ export default {
     padding-bottom: 10px;
 }
 
+@media screen and (min-width: 768px) {
+    .icon {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .col h2 {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .col p {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
 @media (max-width: 767px) {
     .col p {
         font-size: 15px;
     }
 
     .main {
-        margin: 50px;
+        padding: 50px;
     }
 }
 
@@ -160,7 +177,7 @@ export default {
     }
 
     .main {
-        margin: 25px;
+        padding: 25px;
     }
 }
 </style>

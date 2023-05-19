@@ -85,12 +85,6 @@ export default {
   color: #e9eaec;
 }
 
-
-
-.links a:active {
-  color: red;
-}
-
 .links a:hover {
   text-decoration: underline;
 }
@@ -197,28 +191,23 @@ nav {
   right: 10%;
 }
 
-.text h1,
+.text h2,
 span {
   color: #e9eaec;
   font-size: 60px;
   font-family: "Bolds";
 }
 
-.text h1 {
-  font-family: "Bolds";
-  text-shadow: 0 0 1px black;
-}
-
 .text h2,
 span {
   color: #e9eaec;
   font-size: 50px;
-  text-shadow: 0 0 1px black;
+  text-shadow: 0 0 5px black;
   font-family: "Bolds";
 }
 
 .text span {
-  color: red;
+  color: #62A5AA;
 }
 
 
@@ -249,16 +238,16 @@ span {
 
 @media (max-width: 767px) {
   .text {
-    top: 10%;
+    top: 15%;
   }
 }
 
 @media (max-width: 530px) {
   .text {
-    top: 10%;
+    top: 20%;
   }
 
-  .text h1 {
+  .text h2 {
     font-size: 40px;
   }
 

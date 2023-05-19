@@ -52,7 +52,7 @@ export default {
 </script>
 <style scoped>
 a {
-  color: white;
+  color: #223D6A;
 }
 
 .copyright {
@@ -61,7 +61,7 @@ a {
 }
 
 .copyright p {
-  color: white;
+  color: #223D6A;
   display: flex;
   justify-content: center;
 }
@@ -70,7 +70,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #1d1d1d;
-  color: #e9eaec;
+  color: #223D6A;
   padding: 40px 60px;
   text-align: center;
 }
@@ -90,16 +90,6 @@ a {
   margin-bottom: 15px;
 }
 
-.link {
-  color: white;
-  padding-top: 5px;
-  text-decoration: none;
-}
-
-.link:hover {
-  color: red;
-}
-
 .footer__nav {
   display: flex;
   justify-content: center;
@@ -115,7 +105,7 @@ a {
 }
 
 .footer__link:hover {
-  color: red;
+  color: #223D6A;
 }
 
 .footer__social {
@@ -133,9 +123,6 @@ a {
   font-size: 25px;
 }
 
-.footer__social a:hover {
-  color: red;
-}
 
 @media only screen and (max-width: 600px) {
   .footer {
