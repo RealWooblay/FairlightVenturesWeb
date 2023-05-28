@@ -180,7 +180,7 @@ nav {
 
 .main {
   background: transparent;
-  height: 70vh;
+  height: 95vh;
   /* set full height of viewport */
 }
 

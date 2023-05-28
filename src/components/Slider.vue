@@ -57,7 +57,7 @@ export default {
 <style scoped>
 .slideshow {
   width: 100%;
-  height: 90vh;
+  height: 110vh;
   position: relative;
   overflow: hidden;
 }

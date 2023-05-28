@@ -8,21 +8,14 @@
         <router-link to="/#service" v-scroll-to="'#service'" class="footer__link">Services</router-link>
         <router-link to="/#contact" v-scroll-to="'#contact'" class="footer__link">Contact</router-link>
       </nav>
-      <router-link to="/privacy" class="footer__link" @click.prevent="scrollToTop">Privacy Policy</router-link>
     </div>
-    <!--<div class="footer__social" ref="social">
-        <a href="https://twitter.com">
-          <font-awesome-icon icon="fa-brands fa-twitter" />
-        </a>
-        <a href="https://linkedin.com">
-          <font-awesome-icon icon="fa-brands fa-linkedin" />
-        </a>
-      </div>-->
   </footer>
   <div class="copyright">
+    <router-link to="/privacy" class="footer__link" @click.prevent="scrollToTop">Privacy Policy</router-link>
     <p>© 2023 Fairlight Ventures Pty Ltd. All rights reserved.</p>
   </div>
 </template>
+
 <script>
 export default {
   mounted() {
@@ -51,125 +44,79 @@ export default {
 };
 </script>
 <style scoped>
-a {
-  color: #223D6A;
-}
-
 .copyright {
-  background-color: #1d1d1d;
+  background-color: #223D6A;
   padding-bottom: 5px;
 }
 
-.copyright p {
-  color: #223D6A;
-  display: flex;
-  justify-content: center;
+@media (min-width: 768px) {
+  .copyright p {
+    display: flex;
+  }
+
+  .copyright {
+    padding-left: 100px;
+  }
+
+  .footer {
+    padding: 40px 100px;
+  }
+}
+
+@media (max-width: 787px) {
+  .footer {
+    padding: 15px 40px;
+  }
+
+  .copyright {
+    padding: 5px 40px;
+  }
+
+  .copyright p {
+    font-size: 0.7rem;
+  }
+
+  .footer__brand h3 {
+    font-size: 0.4rem;
+    padding-top: 10px;
+  }
+
+  .footer__link {
+    font-size: 0.7rem;
+    gap: 2px;
+  }
 }
 
 .footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: #1d1d1d;
-  color: #223D6A;
-  padding: 40px 60px;
-  text-align: center;
+  background-color: #223D6A;
+  color: white;
+  width: 100%;
 }
 
 .footer__brand {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
 
 .footer__brand h3 {
-  font-style: italic;
-  font-size: 1.2rem;
-  margin-bottom: 15px;
+  font-size: 1rem;
 }
 
 .footer__nav {
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 15px;
 }
 
 .footer__link {
-  font-size: 1rem;
   text-decoration: none;
   color: #e9eaec;
   transition: color 0.2s ease-in-out;
 }
 
 .footer__link:hover {
-  color: #223D6A;
-}
-
-.footer__social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  margin-top: 30px;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-.footer__social a {
-  color: #e9eaec;
-  font-size: 25px;
-}
-
-
-@media only screen and (max-width: 600px) {
-  .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-  }
-
-  .footer__brand {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-
-  .footer__nav {
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-
-  .footer__social {
-    margin-top: 20px;
-  }
-}
-
-/* Medium devices (tablets) */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  .footer {
-    grid-template-columns: 1fr;
-    padding: 30px;
-  }
-
-  .footer__brand {
-    margin-bottom: 30px;
-    text-align: center;
-  }
-
-  .footer__nav {
-    flex-direction: column;
-    gap: 20px;
-    margin-bottom: 30px;
-  }
-
-  .footer__social {
-    margin-top: 30px;
-  }
+  color: #62A5AA;
 }
 </style>
   

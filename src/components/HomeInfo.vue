@@ -55,17 +55,12 @@ export default {
   transition: opacity 1s ease-in-out;
 }
 
-.image {
-  width: 400px;
-}
-
 .info h1 {
   flex-basis: 100%;
   font-size: 40px;
   font-weight: lighter;
-  margin: 0;
-  margin-bottom: 50px;
-  line-height: 50px;
+  padding: 0;
+  padding-bottom: 50px;
   font-family: 'Reg';
 }
 
@@ -77,17 +72,16 @@ export default {
 .info p {
   flex-basis: 100%;
   font-size: 20px;
-  margin: 0;
-  margin-bottom: 20px;
-  line-height: 30px;
+  padding: 0;
+  padding-bottom: 20px;
 }
 
 .text {
-  margin-left: 50px;
+  padding-left: 50px;
 }
 
 .info .bwt {
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .image img {
@@ -110,31 +104,30 @@ export default {
   padding-bottom: 50px;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .main-container {
     padding-left: 80px;
     padding-right: 80px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .info {
     flex-direction: column;
   }
 
   .text {
-    margin: 20px;
+    padding: 20px;
     text-align: center;
   }
 
   .image {
-    margin: 0 auto;
-    max-width: 60%;
-
+    display: flex;
+    justify-content: center;
   }
 
   .image img {
-    width: 80%;
+    width: 50%;
     height: auto;
     padding-top: 50px;
   }
@@ -142,12 +135,11 @@ export default {
   .info h1,
   .info p,
   .info span {
-    font-size: 20px;
-    line-height: 40px;
+    font-size: 2rem;
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .info {
     flex-direction: row;
     justify-content: space-between;
@@ -155,7 +147,7 @@ export default {
 
   .text {
     flex-basis: 50%;
-    margin-left: 40px;
+    padding-left: 40px;
   }
 
   .image {
@@ -166,9 +158,14 @@ export default {
     width: 80%;
     height: auto;
   }
+
+  .text h1 {
+    font-size: 1.5rem;
+
+  }
 }
 
-@media screen and (min-width: 1025px) {
+@media (min-width: 1025px) {
   .info {
     flex-direction: row;
     justify-content: space-between;
@@ -176,7 +173,7 @@ export default {
 
   .text {
     flex-basis: 51%;
-    margin-left: 40px;
+    padding-left: 40px;
   }
 
   .image {
